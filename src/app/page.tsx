@@ -19,110 +19,112 @@ export default function LandingPage() {
   return (
     <main className="flex flex-col">
       {/* Hero */}
-      <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 px-6 md:px-20 py-16 md:py-20 bg-gradient-to-b from-[#F0F7F7] to-white">
-        <div className="flex flex-col gap-8 flex-1">
-          <div className="flex items-center gap-2 bg-teal/10 rounded-full px-4 py-2 w-fit">
-            <Sparkles className="w-4 h-4 text-teal" />
-            <span className="text-sm font-semibold text-teal">
-              AI 기반 하자 증거 수집
-            </span>
+      <section className="bg-gradient-to-b from-[#F0F7F7] to-white px-6 md:px-20 py-16 md:py-20">
+        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20 max-w-6xl mx-auto">
+          <div className="flex flex-col gap-8 flex-1">
+            <div className="flex items-center gap-2 bg-teal/10 rounded-full px-4 py-2 w-fit">
+              <Sparkles className="w-4 h-4 text-teal" />
+              <span className="text-sm font-semibold text-teal">
+                AI 기반 하자 증거 수집
+              </span>
+            </div>
+            <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-[1.1]">
+              보증금,
+              <br />
+              지키는 게<br />
+              실력이다
+            </h1>
+            <p className="text-lg text-gray-500 leading-relaxed max-w-lg">
+              입주 시 촬영한 사진과 퇴실 시 사진을 AI가 비교 분석하여 자연마모와
+              세입자 과실을 구분합니다.
+              <br />
+              법적 참고용 PDF 리포트까지 한 번에.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="#download"
+                className="flex items-center gap-2.5 bg-teal text-white rounded-[14px] px-8 py-4 text-base font-semibold shadow-lg shadow-teal/20 hover:bg-teal-dark transition"
+              >
+                <Download className="w-5 h-5" />
+                무료 다운로드
+              </Link>
+              <Link
+                href="#features"
+                className="flex items-center gap-2.5 bg-white text-gray-900 rounded-[14px] px-8 py-4 text-base font-semibold border border-gray-200 hover:border-gray-300 transition"
+              >
+                자세히 보기
+              </Link>
+            </div>
           </div>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-[1.1]">
-            보증금,
-            <br />
-            지키는 게<br />
-            실력이다
-          </h1>
-          <p className="text-lg text-gray-500 leading-relaxed max-w-lg">
-            입주 시 촬영한 사진과 퇴실 시 사진을 AI가 비교 분석하여 자연마모와
-            세입자 과실을 구분합니다.
-            <br />
-            법적 참고용 PDF 리포트까지 한 번에.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="#download"
-              className="flex items-center gap-2.5 bg-teal text-white rounded-[14px] px-8 py-4 text-base font-semibold shadow-lg shadow-teal/20 hover:bg-teal-dark transition"
-            >
-              <Download className="w-5 h-5" />
-              무료 다운로드
-            </Link>
-            <Link
-              href="#features"
-              className="flex items-center gap-2.5 bg-white text-gray-900 rounded-[14px] px-8 py-4 text-base font-semibold border border-gray-200 hover:border-gray-300 transition"
-            >
-              자세히 보기
-            </Link>
-          </div>
-        </div>
-        {/* 폰 목업 */}
-        <div className="flex-shrink-0">
-          <div className="w-[280px] md:w-[340px] h-[560px] md:h-[680px] bg-gray-50 rounded-[40px] border-2 border-teal/10 shadow-2xl shadow-teal/10 overflow-hidden">
-            <div className="w-full h-full bg-[#FAFAFA] flex flex-col">
-              <div className="px-5 pt-12 pb-4">
-                <p className="text-[10px] text-gray-400">
-                  안녕하세요, 홍길동님
-                </p>
-                <p className="text-[16px] font-bold text-gray-900 mt-0.5">
-                  입퇴실 하자, AI로 꼼꼼하게
-                </p>
-              </div>
-              <div className="mx-5 bg-teal rounded-2xl p-4 text-white">
-                <div className="flex items-center gap-2 mb-1">
-                  <ShieldCheck className="w-4 h-4" />
-                  <span className="text-xs font-semibold">
-                    보증금 보호 현황
-                  </span>
-                </div>
-                <p className="text-[10px] text-white/70 mb-3">
-                  15건의 계약이 관리중입니다
-                </p>
-                <div className="flex bg-white/10 rounded-xl">
-                  <div className="flex-1 text-center py-3 border-r border-white/20">
-                    <p className="text-2xl font-extrabold">15</p>
-                    <p className="text-[10px] text-white/70">관리중</p>
-                  </div>
-                  <div className="flex-1 text-center py-3">
-                    <p className="text-2xl font-extrabold">3</p>
-                    <p className="text-[10px] text-white/70">퇴실 예정</p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex gap-2 mx-5 mt-4">
-                {[
-                  { label: "계약 등록", bg: "bg-teal-light" },
-                  { label: "촬영하기", bg: "bg-orange-50" },
-                  { label: "리포트", bg: "bg-red-50" },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="flex-1 border border-gray-200 rounded-xl py-4 flex flex-col items-center gap-2"
-                  >
-                    <div className={`w-10 h-10 ${item.bg} rounded-full`} />
-                    <span className="text-[11px] font-medium text-gray-700">
-                      {item.label}
-                    </span>
-                  </div>
-                ))}
-              </div>
-              <div className="px-5 mt-4">
-                <p className="text-[10px] font-semibold text-gray-400 tracking-widest mb-2">
-                  MY CONTRACTS
-                </p>
-                <div className="border border-gray-200 rounded-xl p-3">
-                  <span className="text-[9px] bg-teal-light text-teal font-semibold px-2 py-0.5 rounded-full">
-                    입주중
-                  </span>
-                  <p className="text-[13px] font-bold text-gray-900 mt-1.5">
-                    서울 마포구 월드컵북로 396
+          {/* 폰 목업 */}
+          <div className="flex-shrink-0">
+            <div className="w-[280px] md:w-[340px] h-[560px] md:h-[680px] bg-gray-50 rounded-[40px] border-2 border-teal/10 shadow-2xl shadow-teal/10 overflow-hidden">
+              <div className="w-full h-full bg-[#FAFAFA] flex flex-col">
+                <div className="px-5 pt-12 pb-4">
+                  <p className="text-[10px] text-gray-400">
+                    안녕하세요, 홍길동님
                   </p>
-                  <div className="flex justify-between mt-1">
-                    <span className="text-[10px] text-teal font-medium">
-                      보증금 5,000 / 월 65만원
+                  <p className="text-[16px] font-bold text-gray-900 mt-0.5">
+                    입퇴실 하자, AI로 꼼꼼하게
+                  </p>
+                </div>
+                <div className="mx-5 bg-teal rounded-2xl p-4 text-white">
+                  <div className="flex items-center gap-2 mb-1">
+                    <ShieldCheck className="w-4 h-4" />
+                    <span className="text-xs font-semibold">
+                      보증금 보호 현황
                     </span>
-                    <span className="text-[10px] text-gray-400">
-                      ~2027.06.15
+                  </div>
+                  <p className="text-[10px] text-white/70 mb-3">
+                    15건의 계약이 관리중입니다
+                  </p>
+                  <div className="flex bg-white/10 rounded-xl">
+                    <div className="flex-1 text-center py-3 border-r border-white/20">
+                      <p className="text-2xl font-extrabold">15</p>
+                      <p className="text-[10px] text-white/70">관리중</p>
+                    </div>
+                    <div className="flex-1 text-center py-3">
+                      <p className="text-2xl font-extrabold">3</p>
+                      <p className="text-[10px] text-white/70">퇴실 예정</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex gap-2 mx-5 mt-4">
+                  {[
+                    { label: "계약 등록", bg: "bg-teal-light" },
+                    { label: "촬영하기", bg: "bg-orange-50" },
+                    { label: "리포트", bg: "bg-red-50" },
+                  ].map((item) => (
+                    <div
+                      key={item.label}
+                      className="flex-1 border border-gray-200 rounded-xl py-4 flex flex-col items-center gap-2"
+                    >
+                      <div className={`w-10 h-10 ${item.bg} rounded-full`} />
+                      <span className="text-[11px] font-medium text-gray-700">
+                        {item.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                <div className="px-5 mt-4">
+                  <p className="text-[10px] font-semibold text-gray-400 tracking-widest mb-2">
+                    MY CONTRACTS
+                  </p>
+                  <div className="border border-gray-200 rounded-xl p-3">
+                    <span className="text-[9px] bg-teal-light text-teal font-semibold px-2 py-0.5 rounded-full">
+                      입주중
                     </span>
+                    <p className="text-[13px] font-bold text-gray-900 mt-1.5">
+                      서울 마포구 월드컵북로 396
+                    </p>
+                    <div className="flex justify-between mt-1">
+                      <span className="text-[10px] text-teal font-medium">
+                        보증금 5,000 / 월 65만원
+                      </span>
+                      <span className="text-[10px] text-gray-400">
+                        ~2027.06.15
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
