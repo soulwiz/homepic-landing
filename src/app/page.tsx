@@ -11,8 +11,6 @@ import {
   CreditCard,
   Check,
   Smartphone,
-  House,
-  CircleCheck,
 } from "lucide-react";
 import Link from "next/link";
 import { FAQSection } from "./components/FAQSection";
@@ -20,51 +18,6 @@ import { FAQSection } from "./components/FAQSection";
 export default function LandingPage() {
   return (
     <main className="flex flex-col">
-      {/* Header */}
-      <header className="flex items-center justify-between px-6 md:px-20 py-5 bg-white sticky top-0 z-50 border-b border-gray-100">
-        <div className="flex items-center gap-2.5">
-          <div className="w-9 h-9 bg-teal rounded-[10px] flex items-center justify-center relative">
-            <House className="w-[18px] h-[18px] text-white" />
-            <CircleCheck className="w-2.5 h-2.5 text-white absolute bottom-1 right-1" />
-          </div>
-          <span className="text-2xl font-extrabold text-gray-900 tracking-tight">
-            홈픽
-          </span>
-        </div>
-        <nav className="hidden md:flex items-center gap-9">
-          <Link
-            href="#features"
-            className="text-[15px] font-medium text-gray-500 hover:text-gray-900 transition"
-          >
-            주요 기능
-          </Link>
-          <Link
-            href="#recommend"
-            className="text-[15px] font-medium text-gray-500 hover:text-gray-900 transition"
-          >
-            이용 방법
-          </Link>
-          <Link
-            href="#pricing"
-            className="text-[15px] font-medium text-gray-500 hover:text-gray-900 transition"
-          >
-            요금 안내
-          </Link>
-          <Link
-            href="#faq"
-            className="text-[15px] font-medium text-gray-500 hover:text-gray-900 transition"
-          >
-            FAQ
-          </Link>
-          <Link
-            href="#download"
-            className="flex items-center gap-2 bg-teal text-white rounded-[10px] px-6 py-2.5 text-sm font-semibold hover:bg-teal-dark transition"
-          >
-            <Download className="w-4 h-4" />앱 다운로드
-          </Link>
-        </nav>
-      </header>
-
       {/* Hero */}
       <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 px-6 md:px-20 py-16 md:py-20 bg-gradient-to-b from-[#F0F7F7] to-white">
         <div className="flex flex-col gap-8 flex-1">
@@ -369,78 +322,6 @@ export default function LandingPage() {
           </button>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="px-6 md:px-20 py-16 bg-[#111111]">
-        <div className="flex flex-col md:flex-row justify-between gap-10 mb-10">
-          <div className="flex flex-col gap-3">
-            <div className="flex items-center gap-2.5">
-              <div className="w-7 h-7 bg-teal rounded-lg flex items-center justify-center relative">
-                <House className="w-3.5 h-3.5 text-white" />
-                <CircleCheck className="w-2 h-2 text-white absolute bottom-0.5 right-0.5" />
-              </div>
-              <span className="text-xl font-extrabold text-white">홈픽</span>
-            </div>
-            <p className="text-[13px] text-gray-500">
-              입퇴실 하자, AI로 꼼꼼하게
-            </p>
-          </div>
-          <div className="flex gap-20">
-            <div className="flex flex-col gap-3.5">
-              <span className="text-[13px] font-semibold text-white">
-                서비스
-              </span>
-              <Link
-                href="#features"
-                className="text-[13px] text-gray-500 hover:text-gray-300"
-              >
-                주요 기능
-              </Link>
-              <Link
-                href="#pricing"
-                className="text-[13px] text-gray-500 hover:text-gray-300"
-              >
-                요금 안내
-              </Link>
-              <Link
-                href="#faq"
-                className="text-[13px] text-gray-500 hover:text-gray-300"
-              >
-                FAQ
-              </Link>
-            </div>
-            <div className="flex flex-col gap-3.5">
-              <span className="text-[13px] font-semibold text-white">
-                법적 고지
-              </span>
-              <Link
-                href="/terms.html"
-                className="text-[13px] text-gray-500 hover:text-gray-300"
-              >
-                이용약관
-              </Link>
-              <Link
-                href="/privacy.html"
-                className="text-[13px] text-gray-500 hover:text-gray-300"
-              >
-                개인정보처리방침
-              </Link>
-              <Link
-                href="/business"
-                className="text-[13px] text-gray-500 hover:text-gray-300"
-              >
-                사업자 정보
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between">
-          <span className="text-xs text-gray-600">
-            © 2026 HomePick. All rights reserved.
-          </span>
-          <span className="text-xs text-gray-600">support@homepic.app</span>
-        </div>
-      </footer>
     </main>
   );
 }
