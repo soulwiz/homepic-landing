@@ -414,13 +414,13 @@ export default function LandingPage() {
                 법적 고지
               </span>
               <Link
-                href="/terms"
+                href="/terms.html"
                 className="text-[13px] text-gray-500 hover:text-gray-300"
               >
                 이용약관
               </Link>
               <Link
-                href="/privacy"
+                href="/privacy.html"
                 className="text-[13px] text-gray-500 hover:text-gray-300"
               >
                 개인정보처리방침
