@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
+import { Providers } from "./components/Providers";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -10,17 +9,18 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "홈픽 - 입퇴실 하자, AI로 꼼꼼하게",
+  title: "Homepic - Your Home, Managed with AI",
   description:
-    "입주 시 촬영한 사진과 퇴실 시 사진을 AI가 비교 분석하여 자연마모와 세입자 과실을 구분합니다. 법적 참고용 PDF 리포트까지 한 번에.",
-  keywords: "전월세,보증금,하자,퇴실,입주,원상복구,AI분석,증거,리포트,부동산",
+    "From move-in to move-out, Homepic records, inspects, and protects your home with AI. Available in 6 languages.",
+  keywords:
+    "home management,rental inspection,security deposit,AI analysis,move-in,move-out,maintenance,property management",
   openGraph: {
-    title: "홈픽 - 보증금, 지키는 게 실력이다",
+    title: "Homepic - Every moment of your home, captured",
     description:
-      "입퇴실 하자를 AI로 꼼꼼하게 비교하고 법적 증거자료까지 한 번에",
+      "AI-powered home management app. Photo capture, comparison analysis, maintenance tracking, and legal-ready reports.",
     url: "https://homepic.app",
-    siteName: "홈픽",
-    locale: "ko_KR",
+    siteName: "Homepic",
+    locale: "en_US",
     type: "website",
   },
 };
@@ -31,11 +31,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${inter.variable} antialiased`}>
-      <body className="min-h-screen bg-white text-gray-900 font-sans">
-        <Header />
-        {children}
-        <Footer />
+    <html lang="en" className={`${inter.variable} antialiased`}>
+      <body
+        className="min-h-screen bg-white text-gray-900 font-sans"
+        suppressHydrationWarning
+      >
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
