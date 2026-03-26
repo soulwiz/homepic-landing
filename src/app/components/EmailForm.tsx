@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { Mail } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";
-import { supabase } from "../lib/supabase";
+import { getSupabase } from "../lib/supabase";
 
 interface EmailFormProps {
   variant?: "light" | "dark";
@@ -22,7 +22,7 @@ export function EmailForm({ variant = "light" }: EmailFormProps) {
 
     setStatus("submitting");
     try {
-      const { error } = await supabase
+      const { error } = await getSupabase()
         .from("haj_waitlist")
         .upsert({ email, locale }, { onConflict: "email" });
       if (error) throw error;
