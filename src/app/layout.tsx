@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://homepic.app/og-image.png",
-        width: 1170,
-        height: 2532,
+        width: 1200,
+        height: 630,
         alt: "Homepic App Screenshot",
       },
     ],
