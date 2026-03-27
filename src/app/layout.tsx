@@ -22,11 +22,20 @@ export const metadata: Metadata = {
     siteName: "Homepic",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://homepic.app/og-image.png",
+        width: 1170,
+        height: 2532,
+        alt: "Homepic App Screenshot",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Homepic - Every moment of your home, captured",
     description: "AI-powered home management app. From move-in to move-out.",
+    images: ["https://homepic.app/og-image.png"],
   },
 };
 
