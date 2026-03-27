@@ -10,19 +10,21 @@ export function Header() {
   const { locale, setLocale, t } = useLanguage();
   const [langOpen, setLangOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const langRef = useRef<HTMLDivElement>(null);
+  const mobileLangRef = useRef<HTMLDivElement>(null);
+  const desktopLangRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!langOpen) return;
     function handleClickOutside(e: MouseEvent) {
-      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+      const target = e.target as Node;
+      const inMobile = mobileLangRef.current?.contains(target);
+      const inDesktop = desktopLangRef.current?.contains(target);
+      if (!inMobile && !inDesktop) {
         setLangOpen(false);
       }
     }
-    if (langOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-      return () =>
-        document.removeEventListener("mousedown", handleClickOutside);
-    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [langOpen]);
 
   function handleSelectLocale(loc: Locale) {
@@ -30,6 +32,22 @@ export function Header() {
     setLangOpen(false);
     setMenuOpen(false);
   }
+
+  const langDropdown = (
+    <div className="absolute top-full right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[140px] z-[60]">
+      {(Object.keys(localeNames) as Locale[]).map((loc) => (
+        <button
+          key={loc}
+          onClick={() => handleSelectLocale(loc)}
+          className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 cursor-pointer ${
+            locale === loc ? "text-teal font-semibold" : "text-gray-600"
+          }`}
+        >
+          {localeNames[loc]}
+        </button>
+      ))}
+    </div>
+  );
 
   return (
     <header className="flex items-center justify-between px-6 md:px-20 py-5 bg-white sticky top-0 z-50 border-b border-gray-100">
@@ -45,8 +63,7 @@ export function Header() {
 
       {/* 모바일: 언어 + 햄버거 */}
       <div className="flex items-center gap-3 md:hidden">
-        {/* 언어 선택 - 단일 인스턴스 */}
-        <div className="relative" ref={langRef}>
+        <div className="relative" ref={mobileLangRef}>
           <button
             onClick={() => setLangOpen(!langOpen)}
             className="flex items-center gap-1.5 text-[15px] font-medium text-gray-500 hover:text-gray-900 transition cursor-pointer"
@@ -54,21 +71,7 @@ export function Header() {
             <Globe className="w-4 h-4" />
             {localeNames[locale]}
           </button>
-          {langOpen && (
-            <div className="absolute top-full right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[140px] z-[60]">
-              {(Object.keys(localeNames) as Locale[]).map((loc) => (
-                <button
-                  key={loc}
-                  onClick={() => handleSelectLocale(loc)}
-                  className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 cursor-pointer ${
-                    locale === loc ? "text-teal font-semibold" : "text-gray-600"
-                  }`}
-                >
-                  {localeNames[loc]}
-                </button>
-              ))}
-            </div>
-          )}
+          {langOpen && langDropdown}
         </div>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -138,8 +141,7 @@ export function Header() {
         >
           {t("header.faq")}
         </Link>
-        {/* 데스크톱 언어 선택 - ref 없이 (모바일 ref와 충돌 방지) */}
-        <div className="relative">
+        <div className="relative" ref={desktopLangRef}>
           <button
             onClick={() => setLangOpen(!langOpen)}
             className="flex items-center gap-1.5 text-[15px] font-medium text-gray-500 hover:text-gray-900 transition cursor-pointer"
@@ -147,21 +149,7 @@ export function Header() {
             <Globe className="w-4 h-4" />
             {localeNames[locale]}
           </button>
-          {langOpen && (
-            <div className="absolute top-full right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[140px] z-[60]">
-              {(Object.keys(localeNames) as Locale[]).map((loc) => (
-                <button
-                  key={loc}
-                  onClick={() => handleSelectLocale(loc)}
-                  className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 cursor-pointer ${
-                    locale === loc ? "text-teal font-semibold" : "text-gray-600"
-                  }`}
-                >
-                  {localeNames[loc]}
-                </button>
-              ))}
-            </div>
-          )}
+          {langOpen && langDropdown}
         </div>
         <Link
           href="/#early-access"
