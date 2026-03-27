@@ -1,14 +1,58 @@
 "use client";
 
-import { House, CircleCheck, Globe } from "lucide-react";
+import { House, CircleCheck, Globe, Menu, X } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useLanguage } from "../i18n/LanguageContext";
 import { localeNames, type Locale } from "../i18n/translations";
 
 export function Header() {
   const { locale, setLocale, t } = useLanguage();
   const [langOpen, setLangOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
+
+  // 언어 드롭다운 외부 클릭 시 닫기
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const LanguageSelector = ({ className }: { className?: string }) => (
+    <div className={`relative ${className ?? ""}`} ref={langRef}>
+      <button
+        onClick={() => setLangOpen(!langOpen)}
+        className="flex items-center gap-1.5 text-[15px] font-medium text-gray-500 hover:text-gray-900 transition cursor-pointer"
+      >
+        <Globe className="w-4 h-4" />
+        {localeNames[locale]}
+      </button>
+      {langOpen && (
+        <div className="absolute top-full right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[140px] z-50">
+          {(Object.keys(localeNames) as Locale[]).map((loc) => (
+            <button
+              key={loc}
+              onClick={() => {
+                setLocale(loc);
+                setLangOpen(false);
+                setMenuOpen(false);
+              }}
+              className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 cursor-pointer ${
+                locale === loc ? "text-teal font-semibold" : "text-gray-600"
+              }`}
+            >
+              {localeNames[loc]}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 
   return (
     <header className="flex items-center justify-between px-6 md:px-20 py-5 bg-white sticky top-0 z-50 border-b border-gray-100">
@@ -21,6 +65,59 @@ export function Header() {
           {t("header.brand")}
         </span>
       </Link>
+
+      {/* 모바일: 언어 + 햄버거 */}
+      <div className="flex items-center gap-3 md:hidden">
+        <LanguageSelector />
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="p-1 cursor-pointer"
+        >
+          {menuOpen ? (
+            <X className="w-6 h-6 text-gray-700" />
+          ) : (
+            <Menu className="w-6 h-6 text-gray-700" />
+          )}
+        </button>
+      </div>
+
+      {/* 모바일 메뉴 드롭다운 */}
+      {menuOpen && (
+        <div className="absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-lg md:hidden z-40">
+          <nav className="flex flex-col px-6 py-4 gap-4">
+            <Link
+              href="/#features"
+              onClick={() => setMenuOpen(false)}
+              className="text-[15px] font-medium text-gray-500 hover:text-gray-900 transition py-2"
+            >
+              {t("header.features")}
+            </Link>
+            <Link
+              href="/#pricing"
+              onClick={() => setMenuOpen(false)}
+              className="text-[15px] font-medium text-gray-500 hover:text-gray-900 transition py-2"
+            >
+              {t("header.pricing")}
+            </Link>
+            <Link
+              href="/#faq"
+              onClick={() => setMenuOpen(false)}
+              className="text-[15px] font-medium text-gray-500 hover:text-gray-900 transition py-2"
+            >
+              {t("header.faq")}
+            </Link>
+            <Link
+              href="/#early-access"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center justify-center gap-2 bg-teal text-white rounded-[10px] px-6 py-3 text-sm font-semibold hover:bg-teal-dark transition"
+            >
+              {t("header.earlyAccess")}
+            </Link>
+          </nav>
+        </div>
+      )}
+
+      {/* 데스크톱 내비게이션 */}
       <nav className="hidden md:flex items-center gap-9">
         <Link
           href="/#features"
@@ -40,36 +137,7 @@ export function Header() {
         >
           {t("header.faq")}
         </Link>
-
-        {/* 언어 선택 */}
-        <div className="relative">
-          <button
-            onClick={() => setLangOpen(!langOpen)}
-            className="flex items-center gap-1.5 text-[15px] font-medium text-gray-500 hover:text-gray-900 transition cursor-pointer"
-          >
-            <Globe className="w-4 h-4" />
-            {localeNames[locale]}
-          </button>
-          {langOpen && (
-            <div className="absolute top-full right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-[140px]">
-              {(Object.keys(localeNames) as Locale[]).map((loc) => (
-                <button
-                  key={loc}
-                  onClick={() => {
-                    setLocale(loc);
-                    setLangOpen(false);
-                  }}
-                  className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 cursor-pointer ${
-                    locale === loc ? "text-teal font-semibold" : "text-gray-600"
-                  }`}
-                >
-                  {localeNames[loc]}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
-
+        <LanguageSelector />
         <Link
           href="/#early-access"
           className="flex items-center gap-2 bg-teal text-white rounded-[10px] px-6 py-2.5 text-sm font-semibold hover:bg-teal-dark transition"
