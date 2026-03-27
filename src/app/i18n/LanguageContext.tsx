@@ -20,23 +20,32 @@ const LanguageContext = createContext<LanguageContextType | null>(null);
 
 const SUPPORTED: Locale[] = ["en", "ko", "ja", "zh", "es", "de"];
 
+function detectLocale(): Locale {
+  if (typeof navigator === "undefined") return "en";
+  const lang = navigator.language.slice(0, 2);
+  return SUPPORTED.includes(lang as Locale) ? (lang as Locale) : "en";
+}
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocale] = useState<Locale>("en");
+  const [locale, setLocale] = useState<Locale | null>(null);
 
   useEffect(() => {
-    const lang = navigator.language.slice(0, 2);
-    if (SUPPORTED.includes(lang as Locale)) {
-      setLocale(lang as Locale);
-    }
+    setLocale(detectLocale());
   }, []);
 
+  const resolved = locale ?? "en";
+
   const t = useCallback(
-    (key: string) => translations[locale]?.[key] ?? translations.en[key] ?? key,
-    [locale],
+    (key: string) =>
+      translations[resolved]?.[key] ?? translations.en[key] ?? key,
+    [resolved],
   );
 
+  // 브라우저 언어 감지 전까지 빈 화면 (깜빡임 방지)
+  if (locale === null) return null;
+
   return (
-    <LanguageContext.Provider value={{ locale, setLocale, t }}>
+    <LanguageContext.Provider value={{ locale: resolved, setLocale, t }}>
       {children}
     </LanguageContext.Provider>
   );
