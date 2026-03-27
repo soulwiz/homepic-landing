@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Homepic - Every moment of your home, captured",
+    description: "AI-powered home management app. From move-in to move-out.",
+  },
 };
 
 export default function RootLayout({
