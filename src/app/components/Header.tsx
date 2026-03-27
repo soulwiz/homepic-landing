@@ -6,25 +6,33 @@ import { useState, useRef, useEffect } from "react";
 import { useLanguage } from "../i18n/LanguageContext";
 import { localeNames, type Locale } from "../i18n/translations";
 
-export function Header() {
-  const { locale, setLocale, t } = useLanguage();
-  const [langOpen, setLangOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const langRef = useRef<HTMLDivElement>(null);
+function LanguageDropdown({
+  locale,
+  langOpen,
+  setLangOpen,
+  setLocale,
+  onSelect,
+}: {
+  locale: Locale;
+  langOpen: boolean;
+  setLangOpen: (v: boolean) => void;
+  setLocale: (l: Locale) => void;
+  onSelect?: () => void;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
 
-  // 언어 드롭다운 외부 클릭 시 닫기
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
-      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
         setLangOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  }, [setLangOpen]);
 
-  const LanguageSelector = ({ className }: { className?: string }) => (
-    <div className={`relative ${className ?? ""}`} ref={langRef}>
+  return (
+    <div className="relative" ref={ref}>
       <button
         onClick={() => setLangOpen(!langOpen)}
         className="flex items-center gap-1.5 text-[15px] font-medium text-gray-500 hover:text-gray-900 transition cursor-pointer"
@@ -40,7 +48,7 @@ export function Header() {
               onClick={() => {
                 setLocale(loc);
                 setLangOpen(false);
-                setMenuOpen(false);
+                onSelect?.();
               }}
               className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 cursor-pointer ${
                 locale === loc ? "text-teal font-semibold" : "text-gray-600"
@@ -53,6 +61,12 @@ export function Header() {
       )}
     </div>
   );
+}
+
+export function Header() {
+  const { locale, setLocale, t } = useLanguage();
+  const [langOpen, setLangOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="flex items-center justify-between px-6 md:px-20 py-5 bg-white sticky top-0 z-50 border-b border-gray-100">
@@ -68,7 +82,13 @@ export function Header() {
 
       {/* 모바일: 언어 + 햄버거 */}
       <div className="flex items-center gap-3 md:hidden">
-        <LanguageSelector />
+        <LanguageDropdown
+          locale={locale}
+          langOpen={langOpen}
+          setLangOpen={setLangOpen}
+          setLocale={setLocale}
+          onSelect={() => setMenuOpen(false)}
+        />
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="p-1 cursor-pointer"
@@ -137,7 +157,12 @@ export function Header() {
         >
           {t("header.faq")}
         </Link>
-        <LanguageSelector />
+        <LanguageDropdown
+          locale={locale}
+          langOpen={langOpen}
+          setLangOpen={setLangOpen}
+          setLocale={setLocale}
+        />
         <Link
           href="/#early-access"
           className="flex items-center gap-2 bg-teal text-white rounded-[10px] px-6 py-2.5 text-sm font-semibold hover:bg-teal-dark transition"
