@@ -51,131 +51,158 @@ export default function LandingPage() {
 
           {/* 폰 목업 */}
           <div className="flex-shrink-0">
-            {locale === "ko" ? (
-              <div className="w-[280px] md:w-[320px] rounded-[40px] border-2 border-teal/10 shadow-2xl shadow-teal/10 overflow-hidden">
-                <img
-                  src="/home.png"
-                  alt="Homepic App Screenshot"
-                  className="w-full h-auto"
-                />
-              </div>
-            ) : (
-              <div className="w-[280px] md:w-[320px] h-[560px] md:h-[640px] bg-gray-50 rounded-[40px] border-2 border-teal/10 shadow-2xl shadow-teal/10 overflow-hidden flex flex-col justify-between">
-                <div className="w-full flex-1 bg-[#FAFAFA] flex flex-col">
-                  <div className="px-5 pt-12 pb-4 flex justify-between items-start">
-                    <div>
-                      <p className="text-[10px] text-gray-400">
-                        {t("phone.greeting")}
-                      </p>
-                      <p className="text-[15px] font-bold text-gray-900 mt-0.5">
-                        {t("phone.title")}
-                      </p>
-                    </div>
-                    <Bell className="w-5 h-5 text-gray-600 mt-1" />
-                  </div>
-                  <div className="mx-5 bg-teal rounded-2xl p-4 text-white">
-                    <div className="flex items-center gap-2 mb-1">
-                      <ShieldCheck className="w-4 h-4" />
-                      <span className="text-xs font-semibold">
-                        {t("phone.myProperties")}
-                      </span>
-                    </div>
-                    <p className="text-[10px] text-white/70 mb-3">
-                      {t("phone.managed")}
+            <div className="w-[280px] md:w-[320px] h-[560px] md:h-[640px] bg-gray-50 rounded-[40px] border-2 border-teal/10 shadow-2xl shadow-teal/10 overflow-hidden flex flex-col justify-between">
+              <div className="w-full flex-1 bg-[#FAFAFA] flex flex-col overflow-hidden">
+                {/* 상단 */}
+                <div className="px-5 pt-12 pb-4 flex justify-between items-start">
+                  <div>
+                    <p className="text-[10px] text-gray-400">
+                      {t("phone.greeting")}
                     </p>
-                    <div className="flex bg-white/10 rounded-xl">
-                      <div className="flex-1 text-center py-3 border-r border-white/20">
-                        <p className="text-2xl font-extrabold">1</p>
-                        <p className="text-[10px] text-white/70">
-                          {t("phone.active")}
-                        </p>
-                      </div>
-                      <div className="flex-1 text-center py-3">
-                        <p className="text-2xl font-extrabold">0</p>
-                        <p className="text-[10px] text-white/70">
-                          {t("phone.moveOut")}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex gap-2 mx-5 mt-4">
-                    {[
-                      {
-                        label: t("phone.addProperty"),
-                        bg: "bg-teal-light",
-                        iconColor: "text-teal",
-                        Icon: House,
-                      },
-                      {
-                        label: t("phone.photos"),
-                        bg: "bg-orange-50",
-                        iconColor: "text-orange-600",
-                        Icon: Camera,
-                      },
-                      {
-                        label: t("phone.reports"),
-                        bg: "bg-red-50",
-                        iconColor: "text-red-600",
-                        Icon: ClipboardList,
-                      },
-                    ].map((item) => (
-                      <div
-                        key={item.label}
-                        className="flex-1 border border-gray-200 rounded-xl py-3 flex flex-col items-center gap-2"
-                      >
-                        <div
-                          className={`w-9 h-9 ${item.bg} rounded-xl flex items-center justify-center`}
-                        >
-                          <item.Icon
-                            className={`w-[18px] h-[18px] ${item.iconColor}`}
-                          />
-                        </div>
-                        <span className="text-[10px] font-medium text-gray-700">
-                          {item.label}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="px-5 mt-4">
-                    <p className="text-[10px] font-semibold text-gray-400 tracking-widest mb-2">
-                      MY PROPERTIES
+                    <p className="text-[15px] font-bold text-gray-900 mt-0.5">
+                      {t("phone.title")}
                     </p>
-                    <div className="border border-gray-200 rounded-xl p-3">
-                      <span className="text-[9px] bg-teal-light text-teal font-semibold px-2 py-0.5 rounded-full">
-                        {t("phone.status")}
-                      </span>
-                      <p className="text-[12px] font-bold text-gray-900 mt-1.5">
-                        {t("phone.address")}
-                      </p>
-                      <div className="flex justify-between mt-1">
-                        <span className="text-[9px] text-teal font-medium">
-                          {t("phone.deposit")}
-                        </span>
-                        <span className="text-[9px] text-gray-400">
-                          ~2012.12.31
-                        </span>
-                      </div>
-                    </div>
                   </div>
+                  <Bell className="w-5 h-5 text-gray-600 mt-1" />
                 </div>
-                <div className="flex justify-around items-center px-6 py-3 border-t border-gray-200 bg-white">
-                  <div className="flex flex-col items-center gap-1">
-                    <Home className="w-5 h-5 text-teal" />
-                    <span className="text-[9px] font-semibold text-teal">
-                      Home
+
+                {/* 상태 카드 */}
+                <div className="mx-5 bg-teal rounded-2xl p-4 text-white">
+                  <div className="flex items-center gap-2 mb-1">
+                    <House className="w-4 h-4" />
+                    <span className="text-xs font-semibold">
+                      {t("phone.myProperties")}
                     </span>
                   </div>
-                  <div className="flex flex-col items-center gap-1">
-                    <Camera className="w-5 h-5 text-gray-400" />
-                    <span className="text-[9px] text-gray-400">Photos</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-1">
-                    <User className="w-5 h-5 text-gray-400" />
-                    <span className="text-[9px] text-gray-400">My</span>
+                  <p className="text-[10px] text-white/70 mb-3">
+                    {t("phone.managed")}
+                  </p>
+                  <div className="flex bg-white/10 rounded-xl">
+                    <div className="flex-1 text-center py-3 border-r border-white/20">
+                      <p className="text-2xl font-extrabold">1</p>
+                      <p className="text-[10px] text-white/70">
+                        {t("phone.active")}
+                      </p>
+                    </div>
+                    <div className="flex-1 text-center py-3">
+                      <p className="text-2xl font-extrabold">0</p>
+                      <p className="text-[10px] text-white/70">
+                        {t("phone.moveOut")}
+                      </p>
+                    </div>
                   </div>
                 </div>
+
+                {/* 퀵 액션 */}
+                <div className="flex gap-2 mx-5 mt-4">
+                  {[
+                    {
+                      label: t("phone.addProperty"),
+                      bg: "bg-teal-light",
+                      iconColor: "text-teal",
+                      Icon: House,
+                    },
+                    {
+                      label: t("phone.photos"),
+                      bg: "bg-orange-50",
+                      iconColor: "text-orange-600",
+                      Icon: Camera,
+                    },
+                    {
+                      label: t("phone.reports"),
+                      bg: "bg-red-50",
+                      iconColor: "text-red-600",
+                      Icon: ClipboardList,
+                    },
+                  ].map((item) => (
+                    <div
+                      key={item.label}
+                      className="flex-1 border border-gray-200 rounded-xl py-3 flex flex-col items-center gap-2"
+                    >
+                      <div
+                        className={`w-9 h-9 ${item.bg} rounded-xl flex items-center justify-center`}
+                      >
+                        <item.Icon
+                          className={`w-[18px] h-[18px] ${item.iconColor}`}
+                        />
+                      </div>
+                      <span className="text-[10px] font-medium text-gray-700">
+                        {item.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* 프로퍼티 목록 */}
+                <div className="px-5 mt-4 flex flex-col gap-2">
+                  <p className="text-[10px] font-semibold text-gray-400 tracking-widest mb-1">
+                    {locale === "ko" ? t("phone.listLabel") : "MY PROPERTIES"}
+                  </p>
+                  {/* 첫 번째 카드 */}
+                  <div className="border border-gray-200 rounded-xl p-3">
+                    <span className="text-[9px] bg-teal-light text-teal font-semibold px-2 py-0.5 rounded-full">
+                      {t("phone.status")}
+                    </span>
+                    {locale === "ko" && (
+                      <p className="text-[12px] font-bold text-gray-900 mt-1.5">
+                        {t("phone.nickname")}
+                      </p>
+                    )}
+                    <p
+                      className={`text-[${locale === "ko" ? "10px" : "12px"}] ${locale === "ko" ? "text-gray-500" : "font-bold text-gray-900"} ${locale === "ko" ? "mt-0.5" : "mt-1.5"}`}
+                    >
+                      {t("phone.address")}
+                    </p>
+                    <div className="flex justify-between mt-1">
+                      <span className="text-[9px] text-teal font-medium">
+                        {t("phone.deposit")}
+                      </span>
+                      <span className="text-[9px] text-gray-400">
+                        {locale === "ko" ? t("phone.date") : "~2027.06.15"}
+                      </span>
+                    </div>
+                  </div>
+                  {/* 두 번째 카드 - 한국어만 */}
+                  {locale === "ko" && (
+                    <div className="border border-gray-200 rounded-xl p-3">
+                      <span className="text-[9px] bg-gray-200 text-gray-500 font-semibold px-2 py-0.5 rounded-full">
+                        {t("phone.status2")}
+                      </span>
+                      <p className="text-[10px] text-gray-500 mt-1.5">
+                        {t("phone.address2")}
+                      </p>
+                      <div className="flex justify-between mt-1">
+                        <span className="text-[9px] text-gray-400 font-medium">
+                          {t("phone.deposit2")}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
-            )}
+
+              {/* 탭바 */}
+              <div className="flex justify-around items-center px-6 py-3 border-t border-gray-200 bg-white">
+                <div className="flex flex-col items-center gap-1">
+                  <Home className="w-5 h-5 text-teal" />
+                  <span className="text-[9px] font-semibold text-teal">
+                    {locale === "ko" ? t("phone.tabHome") : "Home"}
+                  </span>
+                </div>
+                <div className="flex flex-col items-center gap-1">
+                  <Camera className="w-5 h-5 text-gray-400" />
+                  <span className="text-[9px] text-gray-400">
+                    {locale === "ko" ? t("phone.tabCamera") : "Photos"}
+                  </span>
+                </div>
+                <div className="flex flex-col items-center gap-1">
+                  <User className="w-5 h-5 text-gray-400" />
+                  <span className="text-[9px] text-gray-400">
+                    {locale === "ko" ? t("phone.tabMy") : "My"}
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
