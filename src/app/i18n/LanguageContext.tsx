@@ -9,6 +9,22 @@ import {
   type ReactNode,
 } from "react";
 import { translations, type Locale } from "./translations";
+import { termsTranslations } from "./termsTranslations";
+import { privacyTranslations } from "./privacyTranslations";
+
+// 각 로케일별로 페이지 번역을 병합
+const mergedTranslations: Record<Locale, Record<string, string>> = (() => {
+  const result = {} as Record<Locale, Record<string, string>>;
+  const locales: Locale[] = ["en", "ko", "ja", "zh", "es", "de"];
+  for (const locale of locales) {
+    result[locale] = {
+      ...translations[locale],
+      ...termsTranslations[locale],
+      ...privacyTranslations[locale],
+    };
+  }
+  return result;
+})();
 
 interface LanguageContextType {
   locale: Locale;
@@ -37,7 +53,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const t = useCallback(
     (key: string) =>
-      translations[resolved]?.[key] ?? translations.en[key] ?? key,
+      mergedTranslations[resolved]?.[key] ?? mergedTranslations.en[key] ?? key,
     [resolved],
   );
 
