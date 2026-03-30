@@ -18,6 +18,11 @@ export const translations: Record<Locale, Record<string, string>> = {
     "header.faq": "FAQ",
     "header.earlyAccess": "Get Early Access",
 
+    // Event Banner
+    "event.badge": "EARLY BIRD",
+    "event.title": "First 500 sign-ups get Pro FREE for 1 year",
+    "event.value": "$60 value",
+
     // Hero
     "hero.badge": "Available in 6 Languages",
     "hero.title": "Every moment\nof your home,\ncaptured.",
@@ -143,6 +148,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "header.faq": "FAQ",
     "header.earlyAccess": "사전 등록",
 
+    "event.badge": "EARLY BIRD",
+    "event.title": "선착순 500명 Pro 1년 무료",
+    "event.value": "₩60,000 상당",
+
     "hero.badge": "6개 언어 지원",
     "hero.title": "내 집의 모든 순간,\n기록하다.",
     "hero.desc":
@@ -264,6 +273,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "header.faq": "FAQ",
     "header.earlyAccess": "事前登録",
 
+    "event.badge": "EARLY BIRD",
+    "event.title": "先着500名 Pro 1年間無料",
+    "event.value": "$60相当",
+
     "hero.badge": "6言語対応",
     "hero.title": "住まいの全てを、\n記録する。",
     "hero.desc":
@@ -377,6 +390,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "header.faq": "常见问题",
     "header.earlyAccess": "预约注册",
 
+    "event.badge": "EARLY BIRD",
+    "event.title": "前500名注册 Pro免费1年",
+    "event.value": "$60价值",
+
     "hero.badge": "支持6种语言",
     "hero.title": "家的每一刻，\n尽在掌握。",
     "hero.desc":
@@ -485,6 +502,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "header.pricing": "Precios",
     "header.faq": "FAQ",
     "header.earlyAccess": "Acceso anticipado",
+
+    "event.badge": "EARLY BIRD",
+    "event.title": "Los primeros 500 obtienen Pro GRATIS por 1 año",
+    "event.value": "Valor $60",
 
     "hero.badge": "Disponible en 6 idiomas",
     "hero.title": "Cada momento\nde tu hogar,\ncapturado.",
@@ -603,6 +624,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "header.pricing": "Preise",
     "header.faq": "FAQ",
     "header.earlyAccess": "Früher Zugang",
+
+    "event.badge": "EARLY BIRD",
+    "event.title": "Die ersten 500 erhalten Pro 1 Jahr KOSTENLOS",
+    "event.value": "$60 Wert",
 
     "hero.badge": "Verfügbar in 6 Sprachen",
     "hero.title": "Jeden Moment\ndeines Zuhauses,\nfestgehalten.",

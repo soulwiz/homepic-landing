@@ -27,6 +27,22 @@ export default function LandingPage() {
 
   return (
     <main className="flex flex-col">
+      {/* Event Banner */}
+      <a
+        href="#early-access"
+        className="bg-gradient-to-r from-teal to-teal-dark px-6 py-3.5 flex items-center justify-center gap-3 hover:opacity-90 transition"
+      >
+        <span className="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">
+          {t("event.badge")}
+        </span>
+        <span className="text-white text-sm font-semibold">
+          {t("event.title")}
+        </span>
+        <span className="text-white/60 text-sm hidden md:inline">
+          — {t("event.value")}
+        </span>
+      </a>
+
       {/* Hero */}
       <section className="bg-gradient-to-b from-[#F0F7F7] to-white px-6 md:px-20 py-16 md:py-20">
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20 max-w-6xl mx-auto">
