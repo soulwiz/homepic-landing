@@ -44,19 +44,13 @@ export default function LandingPage() {
       </a>
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#F0F7F7] to-white px-6 md:px-20 py-16 md:py-20">
-        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20 max-w-6xl mx-auto">
-          <div className="flex flex-col gap-8 flex-1">
-            <div className="flex items-center gap-2 bg-teal/10 rounded-full px-4 py-2 w-fit">
-              <Globe className="w-4 h-4 text-teal" />
-              <span className="text-sm font-semibold text-teal">
-                {t("hero.badge")}
-              </span>
-            </div>
-            <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-[1.1] whitespace-pre-line">
+      <section className="bg-gradient-to-b from-[#F0F7F7] to-white px-6 md:px-20 py-8 md:py-20">
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-20 max-w-6xl mx-auto">
+          <div className="flex flex-col gap-5 md:gap-8 flex-1">
+            <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-[1.1] whitespace-pre-line">
               {t("hero.title")}
             </h1>
-            <p className="text-lg text-gray-500 leading-relaxed max-w-lg">
+            <p className="text-base md:text-lg text-gray-500 leading-relaxed max-w-lg">
               {t("hero.desc")}
             </p>
             <div className="max-w-[480px]">
@@ -65,8 +59,8 @@ export default function LandingPage() {
             <p className="text-sm text-gray-400">🚀 {t("hero.note")}</p>
           </div>
 
-          {/* 폰 목업 */}
-          <div className="flex-shrink-0">
+          {/* 폰 목업 — 모바일에서 숨김 */}
+          <div className="hidden md:block flex-shrink-0">
             <div className="w-[280px] md:w-[320px] h-[560px] md:h-[640px] bg-gray-50 rounded-[40px] border-2 border-teal/10 shadow-2xl shadow-teal/10 overflow-hidden flex flex-col justify-between">
               <div className="w-full flex-1 bg-[#FAFAFA] flex flex-col overflow-hidden">
                 {/* 상단 */}
