@@ -56,8 +56,8 @@ const content = {
 };
 
 export default function AccountDeletionPage() {
-  const { lang } = useLanguage();
-  const c = content[lang === "ko" ? "ko" : "en"];
+  const { locale } = useLanguage();
+  const c = content[locale === "ko" ? "ko" : "en"];
 
   return (
     <div className="max-w-[720px] mx-auto px-6 py-10 pb-20 leading-[1.8]">
