@@ -38,9 +38,11 @@ export default function LandingPage() {
         <span className="text-white text-sm font-semibold">
           {t("event.title")}
         </span>
-        <span className="text-white/60 text-sm hidden md:inline">
-          — {t("event.value")}
-        </span>
+        {t("event.value") && (
+          <span className="text-white/60 text-sm hidden md:inline">
+            — {t("event.value")}
+          </span>
+        )}
       </a>
 
       {/* Hero */}
