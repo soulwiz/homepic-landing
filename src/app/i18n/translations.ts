@@ -29,7 +29,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.desc":
       "From move-in to move-out, Homepic records, inspects, and protects your home with AI — so you never lose a deposit or miss a maintenance issue again.",
     "hero.emailPlaceholder": "Enter your email",
-    "hero.cta": "Get Early Access",
+    "hero.cta": "Get Pro 1yr Free",
+    "hero.limitedSpots": "Limited to first 500",
+    "hero.waitlistCount": "{count} people are waiting",
+    "hero.spotsLeft": "{count} spots left out of 500",
     "hero.note": "Launching soon — be the first to know",
 
     // Phone Mockup
@@ -138,6 +141,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     // Email Form
     "email.success": "You're on the list! We'll notify you at launch.",
     "email.error": "Something went wrong. Please try again.",
+    "email.invalidEmail": "Please enter a valid email address.",
     "email.submitting": "Submitting...",
   },
 
@@ -157,7 +161,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.desc":
       "입주부터 퇴실까지, 홈픽이 AI로 기록하고, 점검하고, 보호합니다. 보증금 분쟁도, 유지보수 이슈도 놓치지 마세요.",
     "hero.emailPlaceholder": "이메일을 입력하세요",
-    "hero.cta": "사전 등록하기",
+    "hero.cta": "Pro 1년 무료 받기",
+    "hero.limitedSpots": "선착순 500명 한정",
+    "hero.waitlistCount": "현재 {count}명이 대기 중입니다",
+    "hero.spotsLeft": "500명 중 {count}자리 남음",
     "hero.note": "곧 출시됩니다 — 가장 먼저 알려드릴게요",
 
     "phone.greeting": "안녕하세요, 테스트유저님",
@@ -223,7 +230,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "pricing.desc": "무료로 시작하세요. 업그레이드하면 무제한.",
     "pricing.free": "무료",
     "pricing.freePrice": "₩0",
-    "pricing.freeSub": "1 프로퍼티 · 30장",
+    "pricing.freeSub": "1 내 집 · 30장",
     "pricing.freeF1": "사진 30장 촬영",
     "pricing.freeF2": "AI 점검 리포트 — 무료",
     "pricing.freeF3": "서버 타임스탬프 & GPS",
@@ -231,7 +238,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "pricing.pro": "Pro",
     "pricing.proPrice": "₩4,900/월",
     "pricing.proSub": "무제한 이용",
-    "pricing.proF1": "무제한 사진 & 프로퍼티",
+    "pricing.proF1": "무제한 사진 & 내 집",
     "pricing.proF2": "무제한 AI 점검",
     "pricing.proF3": "OCR 문서 보관함",
     "pricing.proF4": "우선 지원",
@@ -246,7 +253,7 @@ export const translations: Record<Locale, Record<string, string>> = {
       "AI 분석 결과 자체는 법적 효력을 보장하지 않습니다. 다만 서버 인증 타임스탬프, GPS 검증 데이터가 포함된 리포트는 분쟁 시 유력한 참고자료로 활용할 수 있습니다.",
     "faq.q3": "리포트 비용은 얼마인가요?",
     "faq.a3":
-      "리포트는 완전 무료입니다. 사진 촬영, AI 점검, 프로퍼티 관리 모두 무료로 이용 가능합니다.",
+      "리포트는 완전 무료입니다. 사진 촬영, AI 점검, 내 집 관리 모두 무료로 이용 가능합니다.",
     "faq.q4": "자연마모와 세입자 과실은 어떻게 구분하나요?",
     "faq.a4":
       "AI가 입주 시와 퇴실 시 사진을 비교하여, 벽지 변색·장판 눌림·도어 마모 등은 자연마모로, 새로운 스크래치·파손 등은 세입자 과실로 판정합니다.",
@@ -263,6 +270,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     "email.success": "등록 완료! 출시 시 알려드리겠습니다.",
     "email.error": "문제가 발생했습니다. 다시 시도해주세요.",
+    "email.invalidEmail": "올바른 이메일 주소를 입력해주세요.",
     "email.submitting": "등록 중...",
   },
 
@@ -282,7 +290,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.desc":
       "入居から退去まで、HomepicがAIで記録・検査・保護します。敷金トラブルもメンテナンス問題も見逃しません。",
     "hero.emailPlaceholder": "メールアドレスを入力",
-    "hero.cta": "事前登録する",
+    "hero.cta": "Pro 1年無料で入手",
+    "hero.limitedSpots": "先着500名限定",
+    "hero.waitlistCount": "現在{count}名が待機中です",
+    "hero.spotsLeft": "500名中 残り{count}席",
     "hero.note": "まもなくリリース — いち早くお届けします",
 
     "phone.greeting": "こんにちは、Sarahさん",
@@ -380,6 +391,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     "email.success": "登録完了！リリース時にお知らせします。",
     "email.error": "エラーが発生しました。もう一度お試しください。",
+    "email.invalidEmail": "有効なメールアドレスを入力してください。",
     "email.submitting": "送信中...",
   },
 
@@ -399,7 +411,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.desc":
       "从入住到退租，Homepic用AI记录、检查、保护您的家。再也不会丢失押金或遗漏维修问题。",
     "hero.emailPlaceholder": "输入您的邮箱",
-    "hero.cta": "预约注册",
+    "hero.cta": "免费获取Pro 1年",
+    "hero.limitedSpots": "限前500名",
+    "hero.waitlistCount": "目前{count}人正在等待",
+    "hero.spotsLeft": "500名中剩余{count}个名额",
     "hero.note": "即将上线 — 第一时间通知您",
 
     "phone.greeting": "您好，Sarah",
@@ -493,6 +508,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     "email.success": "注册成功！上线时会通知您。",
     "email.error": "出了点问题，请重试。",
+    "email.invalidEmail": "请输入有效的邮箱地址。",
     "email.submitting": "提交中...",
   },
 
@@ -512,7 +528,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.desc":
       "Desde la mudanza hasta la salida, Homepic registra, inspecciona y protege tu hogar con IA — para que nunca pierdas una fianza ni pases por alto un problema de mantenimiento.",
     "hero.emailPlaceholder": "Ingresa tu email",
-    "hero.cta": "Acceso anticipado",
+    "hero.cta": "Pro 1 año gratis",
+    "hero.limitedSpots": "Limitado a los primeros 500",
+    "hero.waitlistCount": "{count} personas están esperando",
+    "hero.spotsLeft": "{count} lugares de 500 disponibles",
     "hero.note": "Próximamente — sé el primero en enterarte",
 
     "phone.greeting": "Hola, Sarah",
@@ -614,6 +633,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     "email.success": "¡Estás en la lista! Te notificaremos en el lanzamiento.",
     "email.error": "Algo salió mal. Por favor intenta de nuevo.",
+    "email.invalidEmail": "Por favor ingresa una dirección de email válida.",
     "email.submitting": "Enviando...",
   },
 
@@ -633,7 +653,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.desc":
       "Vom Einzug bis zum Auszug — Homepic dokumentiert, prüft und schützt dein Zuhause mit KI. Nie wieder Kaution verlieren oder Wartungsprobleme übersehen.",
     "hero.emailPlaceholder": "E-Mail eingeben",
-    "hero.cta": "Früher Zugang",
+    "hero.cta": "Pro 1 Jahr kostenlos",
+    "hero.limitedSpots": "Begrenzt auf die ersten 500",
+    "hero.waitlistCount": "{count} Personen warten bereits",
+    "hero.spotsLeft": "{count} von 500 Plätzen übrig",
     "hero.note": "Bald verfügbar — sei der Erste, der es erfährt",
 
     "phone.greeting": "Hallo, Sarah",
@@ -735,6 +758,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "email.success":
       "Du bist auf der Liste! Wir benachrichtigen dich beim Start.",
     "email.error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "email.invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
     "email.submitting": "Wird gesendet...",
   },
 };

@@ -30,7 +30,7 @@ export default function LandingPage() {
       {/* Event Banner */}
       <a
         href="#early-access"
-        className="bg-gradient-to-r from-teal to-teal-dark px-6 py-3.5 flex items-center justify-center gap-3 hover:opacity-90 transition"
+        className="bg-gradient-to-r from-teal to-teal-dark px-6 py-2 md:py-3.5 flex items-center justify-center gap-3 hover:opacity-90 transition"
       >
         <span className="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">
           {t("event.badge")}
@@ -46,13 +46,13 @@ export default function LandingPage() {
       </a>
 
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#F0F7F7] to-white px-6 md:px-20 py-8 md:py-20">
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-20 max-w-6xl mx-auto">
-          <div className="flex flex-col gap-5 md:gap-8 flex-1">
-            <h1 className="text-4xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-[1.1] whitespace-pre-line">
+      <section className="bg-gradient-to-b from-[#F0F7F7] to-white px-6 md:px-20 py-4 md:py-20">
+        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-20 max-w-6xl mx-auto">
+          <div className="flex flex-col gap-3 md:gap-8 flex-1">
+            <h1 className="text-2xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-[1.1] whitespace-pre-line">
               {t("hero.title")}
             </h1>
-            <p className="text-base md:text-lg text-gray-500 leading-relaxed max-w-lg">
+            <p className="text-sm md:text-lg text-gray-500 leading-relaxed max-w-lg">
               {t("hero.desc")}
             </p>
             <div className="max-w-[480px]">
