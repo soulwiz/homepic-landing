@@ -71,7 +71,8 @@ export function EmailForm({ variant = "light" }: EmailFormProps) {
       if (waitlistCount !== null) {
         setWaitlistCount(waitlistCount + 1);
       }
-    } catch {
+    } catch (err) {
+      console.error("[waitlist] submit failed:", err);
       setStatus("error");
     }
   };

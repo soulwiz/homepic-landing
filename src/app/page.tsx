@@ -439,6 +439,9 @@ export default function LandingPage() {
             </a>
           </div>
         </div>
+        <p className="text-xs text-gray-400 text-center mt-6">
+          {t("pricing.fairUse")}
+        </p>
       </section>
 
       {/* FAQ */}
