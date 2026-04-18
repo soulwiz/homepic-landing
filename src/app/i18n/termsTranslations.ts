@@ -35,8 +35,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article4.desc": "회사는 다음과 같은 서비스를 제공합니다.",
     "terms.article4.item1": "입주 시 공간별 사진 촬영 및 저장",
     "terms.article4.item2": "퇴실 시 사진 촬영 및 입주 사진과의 AI 비교 분석",
-    "terms.article4.item3":
-      "하자 유형 분류 (과실 의심, 자연마모, 기존하자)",
+    "terms.article4.item3": "하자 유형 분류 (과실 의심, 자연마모, 기존하자)",
     "terms.article4.item4": "법적 참고용 PDF 하자 증거 리포트 생성",
     "terms.article4.item5": "계약 관리 및 촬영 가이드 기능",
     "terms.article4.item6": "기타 회사가 추가 개발하여 제공하는 서비스",
@@ -53,11 +52,11 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     // 제6조
     "terms.article6.title": "제6조 (서비스 이용료 및 결제)",
     "terms.article6.item1":
-      "기본 서비스(사진 촬영, 저장)는 무료로 제공됩니다.",
+      "무료 플랜은 프로퍼티 1개, 사진 월 30장, AI 분석 월 3회로 제공됩니다.",
     "terms.article6.item2":
-      "AI 비교 분석 및 PDF 리포트 생성은 유료 서비스이며, 인앱 결제(Apple App Store, Google Play Store)를 통해 결제합니다.",
+      "Pro 플랜은 월 $4.99 또는 연 $49.99이며, 무제한 프로퍼티 및 사진 촬영, AI 분석(공정이용 월 500회 이내)을 제공합니다. 월 500회를 초과하는 AI 요청은 남용 방지를 위해 일시 제한될 수 있습니다.",
     "terms.article6.item3":
-      "구독 상품의 결제 주기 및 요금은 앱 내 구독 관리 화면에서 확인할 수 있습니다.",
+      "유료 구독은 인앱 결제(Apple App Store, Google Play Store)를 통해 결제하며, 결제 주기 및 요금은 앱 내 구독 관리 화면에서 확인할 수 있습니다.",
     "terms.article6.item4":
       "결제 취소 및 환불은 각 앱스토어의 환불 정책에 따릅니다.",
 
@@ -74,8 +73,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
 
     // 제8조
     "terms.article8.title": "제8조 (이용자의 의무)",
-    "terms.article8.item1":
-      "이용자는 다음 행위를 하여서는 안 됩니다.",
+    "terms.article8.item1": "이용자는 다음 행위를 하여서는 안 됩니다.",
     "terms.article8.item1.sub1":
       "타인의 개인정보를 도용하거나 허위 정보를 등록하는 행위",
     "terms.article8.item1.sub2":
@@ -84,8 +82,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
       "서비스의 운영을 방해하거나 안정성을 해치는 행위",
     "terms.article8.item1.sub4":
       "타인의 재산권, 초상권, 사생활 등을 침해하는 행위",
-    "terms.article8.item1.sub5":
-      "서비스를 역설계, 무단 복제, 변조하는 행위",
+    "terms.article8.item1.sub5": "서비스를 역설계, 무단 복제, 변조하는 행위",
     "terms.article8.item2":
       "이용자는 촬영한 사진 및 등록한 계약 정보의 정확성에 대해 책임을 집니다.",
 
@@ -135,8 +132,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
 
     // 부칙
     "terms.supplement.title": "부칙",
-    "terms.supplement.content":
-      "본 약관은 2026년 3월 1일부터 시행합니다.",
+    "terms.supplement.content": "본 약관은 2026년 3월 1일부터 시행합니다.",
 
     // 회사 정보
     "terms.company": "주식회사 인터스틱 (interstick Corp)",
@@ -159,8 +155,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article2.item3":
       '"Content" refers to photos, contract information, AI analysis results, reports, and other materials uploaded by the User through the Service.',
 
-    "terms.article3.title":
-      "Article 3 (Effectiveness and Amendment of Terms)",
+    "terms.article3.title": "Article 3 (Effectiveness and Amendment of Terms)",
     "terms.article3.item1":
       "These Terms apply to all Users who wish to use the Service.",
     "terms.article3.item2":
@@ -169,8 +164,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
       "If a User does not agree with the amended Terms, the User may discontinue use of the Service and withdraw from membership.",
 
     "terms.article4.title": "Article 4 (Description of Service)",
-    "terms.article4.desc":
-      "The Company provides the following services:",
+    "terms.article4.desc": "The Company provides the following services:",
     "terms.article4.item1":
       "Room-by-room photo capture and storage upon move-in",
     "terms.article4.item2":
@@ -179,13 +173,11 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
       "Defect type classification (suspected negligence, natural wear, pre-existing defects)",
     "terms.article4.item4":
       "PDF defect evidence report generation for legal reference",
-    "terms.article4.item5":
-      "Contract management and photo guide features",
+    "terms.article4.item5": "Contract management and photo guide features",
     "terms.article4.item6":
       "Other services additionally developed and provided by the Company",
 
-    "terms.article5.title":
-      "Article 5 (Registration and Withdrawal)",
+    "terms.article5.title": "Article 5 (Registration and Withdrawal)",
     "terms.article5.item1":
       "Users may register through Kakao, Google, or Apple social login, or via email.",
     "terms.article5.item2":
@@ -193,14 +185,13 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article5.item3":
       "Upon withdrawal, personal information shall be processed in accordance with the Privacy Policy, and data subject to legally mandated retention shall be retained for the required period before destruction.",
 
-    "terms.article6.title":
-      "Article 6 (Service Fees and Payment)",
+    "terms.article6.title": "Article 6 (Service Fees and Payment)",
     "terms.article6.item1":
-      "Basic services (photo capture and storage) are provided free of charge.",
+      "The Free Plan includes 1 property, 30 photos per month, and 3 AI analyses per month.",
     "terms.article6.item2":
-      "AI comparison analysis and PDF report generation are paid services, payable through in-app purchases (Apple App Store, Google Play Store).",
+      "The Pro Plan costs $4.99/month or $49.99/year and provides unlimited properties, photo capture, and AI analysis (fair use within 500 per month). AI requests exceeding 500 per month may be temporarily throttled to prevent abuse.",
     "terms.article6.item3":
-      "Subscription billing cycles and fees can be viewed on the subscription management screen within the app.",
+      "Paid subscriptions are processed via in-app purchase (Apple App Store, Google Play Store). Billing cycles and fees can be viewed on the subscription management screen within the app.",
     "terms.article6.item4":
       "Payment cancellations and refunds are subject to the refund policies of the respective app stores.",
 
@@ -239,8 +230,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article9.item3":
       "The Company shall process opinions or complaints raised by Users regarding Service use through appropriate procedures.",
 
-    "terms.article10.title":
-      "Article 10 (Service Suspension and Modification)",
+    "terms.article10.title": "Article 10 (Service Suspension and Modification)",
     "terms.article10.item1":
       "The Company may temporarily suspend all or part of the Service due to unavoidable circumstances such as force majeure, system failures, or scheduled maintenance.",
     "terms.article10.item2":
@@ -271,8 +261,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
       "Matters not stipulated in these Terms shall be governed by applicable laws and customary practices.",
 
     "terms.supplement.title": "Supplementary Provisions",
-    "terms.supplement.content":
-      "These Terms are effective from March 1, 2026.",
+    "terms.supplement.content": "These Terms are effective from March 1, 2026.",
 
     "terms.company": "interstick Corp",
   },
@@ -305,14 +294,11 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article4.title": "第4条（サービスの内容）",
     "terms.article4.desc": "当社は以下のサービスを提供します。",
     "terms.article4.item1": "入居時の部屋ごとの写真撮影および保存",
-    "terms.article4.item2":
-      "退去時の写真撮影および入居時写真とのAI比較分析",
-    "terms.article4.item3":
-      "瑕疵類型分類（過失疑い、自然摩耗、既存瑕疵）",
+    "terms.article4.item2": "退去時の写真撮影および入居時写真とのAI比較分析",
+    "terms.article4.item3": "瑕疵類型分類（過失疑い、自然摩耗、既存瑕疵）",
     "terms.article4.item4": "法的参考用PDF瑕疵証拠レポートの生成",
     "terms.article4.item5": "契約管理および撮影ガイド機能",
-    "terms.article4.item6":
-      "その他当社が追加開発して提供するサービス",
+    "terms.article4.item6": "その他当社が追加開発して提供するサービス",
 
     "terms.article5.title": "第5条（会員登録および退会）",
     "terms.article5.item1":
@@ -324,11 +310,11 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
 
     "terms.article6.title": "第6条（サービス利用料および決済）",
     "terms.article6.item1":
-      "基本サービス（写真撮影、保存）は無料で提供されます。",
+      "無料プランは物件1件、写真月30枚、AI分析月3回で提供されます。",
     "terms.article6.item2":
-      "AI比較分析およびPDFレポート生成は有料サービスであり、アプリ内課金（Apple App Store、Google Play Store）を通じて決済します。",
+      "Proプランは月$4.99または年$49.99で、無制限の物件・写真撮影・AI分析（公正利用として月500回以内）をご利用いただけます。月500回を超えるAIリクエストは、不正利用防止のため一時的に制限される場合があります。",
     "terms.article6.item3":
-      "サブスクリプション商品の決済周期および料金はアプリ内のサブスクリプション管理画面で確認できます。",
+      "有料サブスクリプションはアプリ内課金（Apple App Store、Google Play Store）で決済します。決済周期および料金はアプリ内のサブスクリプション管理画面で確認できます。",
     "terms.article6.item4":
       "決済のキャンセルおよび払い戻しは各アプリストアの返金ポリシーに従います。",
 
@@ -343,8 +329,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
       "当社はAI分析結果の正確性、完全性を保証せず、分析結果に基づく利用者の判断や行為について責任を負いません。",
 
     "terms.article8.title": "第8条（利用者の義務）",
-    "terms.article8.item1":
-      "利用者は以下の行為をしてはなりません。",
+    "terms.article8.item1": "利用者は以下の行為をしてはなりません。",
     "terms.article8.item1.sub1":
       "他人の個人情報を盗用または虚偽の情報を登録する行為",
     "terms.article8.item1.sub2":
@@ -397,8 +382,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
       "本規約に定めのない事項は、関連法令および商慣習に従います。",
 
     "terms.supplement.title": "附則",
-    "terms.supplement.content":
-      "本規約は2026年3月1日から施行します。",
+    "terms.supplement.content": "本規約は2026年3月1日から施行します。",
 
     "terms.company": "株式会社interstick（interstick Corp）",
   },
@@ -415,14 +399,12 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article2.title": "第二条（术语定义）",
     "terms.article2.item1":
       "\u201C服务\u201D是指公司提供的基于AI的缺陷检测、入住/退房照片对比分析、PDF缺陷证据报告生成等一切服务。",
-    "terms.article2.item2":
-      "\u201C用户\u201D是指依照本条款使用服务的人员。",
+    "terms.article2.item2": "\u201C用户\u201D是指依照本条款使用服务的人员。",
     "terms.article2.item3":
       "\u201C内容\u201D是指用户通过服务上传的照片、合同信息、AI分析结果、报告等。",
 
     "terms.article3.title": "第三条（条款的效力及变更）",
-    "terms.article3.item1":
-      "本条款适用于所有希望使用本服务的用户。",
+    "terms.article3.item1": "本条款适用于所有希望使用本服务的用户。",
     "terms.article3.item2":
       "公司可在不违反相关法律法规的范围内修订本条款，修订时将在生效日7天前通过应用内通知。",
     "terms.article3.item3":
@@ -431,10 +413,8 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article4.title": "第四条（服务内容）",
     "terms.article4.desc": "公司提供以下服务：",
     "terms.article4.item1": "入住时按空间拍摄并保存照片",
-    "terms.article4.item2":
-      "退房时拍摄照片并与入住照片进行AI对比分析",
-    "terms.article4.item3":
-      "缺陷类型分类（疑似过失、自然磨损、原有缺陷）",
+    "terms.article4.item2": "退房时拍摄照片并与入住照片进行AI对比分析",
+    "terms.article4.item3": "缺陷类型分类（疑似过失、自然磨损、原有缺陷）",
     "terms.article4.item4": "生成法律参考用PDF缺陷证据报告",
     "terms.article4.item5": "合同管理及拍摄指南功能",
     "terms.article4.item6": "公司另行开发并提供的其他服务",
@@ -442,24 +422,21 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article5.title": "第五条（注册与注销）",
     "terms.article5.item1":
       "用户可通过Kakao、Google、Apple社交登录或电子邮件注册账户。",
-    "terms.article5.item2":
-      "会员可随时通过应用内的个人页面申请注销。",
+    "terms.article5.item2": "会员可随时通过应用内的个人页面申请注销。",
     "terms.article5.item3":
       "注销时，个人信息将按照隐私政策处理，法律规定有保管义务的数据将在保管期限届满后销毁。",
 
     "terms.article6.title": "第六条（服务费用与支付）",
     "terms.article6.item1":
-      "基础服务（拍照、保存）免费提供。",
+      "免费套餐包括1个房产、每月30张照片和每月3次AI分析。",
     "terms.article6.item2":
-      "AI对比分析及PDF报告生成为付费服务，通过应用内购买（Apple App Store、Google Play Store）支付。",
+      "Pro套餐每月$4.99或每年$49.99，提供无限房产、无限照片拍摄和AI分析（公平使用：每月最多500次）。超过每月500次的AI请求可能会临时限制以防止滥用。",
     "terms.article6.item3":
-      "订阅产品的支付周期及费用可在应用内的订阅管理页面查看。",
-    "terms.article6.item4":
-      "付款取消及退款按各应用商店的退款政策执行。",
+      "付费订阅通过应用内购买（Apple App Store、Google Play Store）结算。付款周期和费用可在应用内的订阅管理页面查看。",
+    "terms.article6.item4": "付款取消及退款按各应用商店的退款政策执行。",
 
     "terms.article7.title": "第七条（AI分析结果免责）",
-    "terms.article7.item1":
-      "本服务的AI分析结果仅供参考，不保证其法律效力。",
+    "terms.article7.item1": "本服务的AI分析结果仅供参考，不保证其法律效力。",
     "terms.article7.item2":
       "AI分析基于照片图像，因此结果可能因拍摄条件（光线、角度、分辨率等）而有所不同。",
     "terms.article7.item3":
@@ -469,24 +446,18 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
 
     "terms.article8.title": "第八条（用户义务）",
     "terms.article8.item1": "用户不得从事以下行为：",
-    "terms.article8.item1.sub1":
-      "盗用他人个人信息或登记虚假信息的行为",
-    "terms.article8.item1.sub2":
-      "利用服务进行违反法律法规或公共秩序的行为",
-    "terms.article8.item1.sub3":
-      "妨碍服务运营或损害其稳定性的行为",
-    "terms.article8.item1.sub4":
-      "侵犯他人财产权、肖像权、隐私等的行为",
-    "terms.article8.item1.sub5":
-      "对服务进行反向工程、未经授权复制或篡改的行为",
+    "terms.article8.item1.sub1": "盗用他人个人信息或登记虚假信息的行为",
+    "terms.article8.item1.sub2": "利用服务进行违反法律法规或公共秩序的行为",
+    "terms.article8.item1.sub3": "妨碍服务运营或损害其稳定性的行为",
+    "terms.article8.item1.sub4": "侵犯他人财产权、肖像权、隐私等的行为",
+    "terms.article8.item1.sub5": "对服务进行反向工程、未经授权复制或篡改的行为",
     "terms.article8.item2":
       "用户对所拍摄照片及登记的合同信息的准确性承担责任。",
 
     "terms.article9.title": "第九条（公司义务）",
     "terms.article9.item1":
       "公司应依照相关法律法规及本条款，努力提供持续稳定的服务。",
-    "terms.article9.item2":
-      "公司应制定并遵守隐私政策，保护用户的个人信息。",
+    "terms.article9.item2": "公司应制定并遵守隐私政策，保护用户的个人信息。",
     "terms.article9.item3":
       "公司应通过适当程序处理用户就服务使用提出的意见或投诉。",
 
@@ -497,8 +468,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
       "公司可变更服务内容、运营方式等，重大变更事项将提前通知。",
 
     "terms.article11.title": "第十一条（内容管理）",
-    "terms.article11.item1":
-      "用户上传的照片及合同信息的著作权归用户所有。",
+    "terms.article11.item1": "用户上传的照片及合同信息的著作权归用户所有。",
     "terms.article11.item2":
       "公司仅在服务提供目的（AI分析、报告生成）范围内使用用户内容。",
     "terms.article11.item3":
@@ -507,22 +477,19 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article12.title": "第十二条（损害赔偿）",
     "terms.article12.item1":
       "因公司故意或重大过失导致用户遭受损害的，公司应依据相关法律法规进行赔偿。",
-    "terms.article12.item2":
-      "因AI分析结果不准确导致的损害适用第七条免责条款。",
+    "terms.article12.item2": "因AI分析结果不准确导致的损害适用第七条免责条款。",
 
     "terms.article13.title": "第十三条（争议解决）",
     "terms.article13.item1":
       "因服务使用引发公司与用户之间的争议时，双方应诚实协商以求妥善解决。",
-    "terms.article13.item2":
-      "协商未达成一致时，管辖法院依据民事诉讼法确定。",
+    "terms.article13.item2": "协商未达成一致时，管辖法院依据民事诉讼法确定。",
 
     "terms.article14.title": "第十四条（其他）",
     "terms.article14.content":
       "本条款未规定的事项，依照相关法律法规及商业惯例处理。",
 
     "terms.supplement.title": "附则",
-    "terms.supplement.content":
-      "本条款自2026年3月1日起施行。",
+    "terms.supplement.content": "本条款自2026年3月1日起施行。",
 
     "terms.company": "interstick株式会社（interstick Corp）",
   },
@@ -553,10 +520,8 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article3.item3":
       "Si un Usuario no está de acuerdo con los Términos modificados, podrá dejar de utilizar el Servicio y darse de baja.",
 
-    "terms.article4.title":
-      "Artículo 4 (Descripción del Servicio)",
-    "terms.article4.desc":
-      "La Empresa proporciona los siguientes servicios:",
+    "terms.article4.title": "Artículo 4 (Descripción del Servicio)",
+    "terms.article4.desc": "La Empresa proporciona los siguientes servicios:",
     "terms.article4.item1":
       "Captura y almacenamiento de fotos por habitación al momento de la mudanza",
     "terms.article4.item2":
@@ -570,8 +535,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article4.item6":
       "Otros servicios desarrollados y proporcionados adicionalmente por la Empresa",
 
-    "terms.article5.title":
-      "Artículo 5 (Registro y Cancelación de Cuenta)",
+    "terms.article5.title": "Artículo 5 (Registro y Cancelación de Cuenta)",
     "terms.article5.item1":
       "Los Usuarios pueden registrarse a través del inicio de sesión social de Kakao, Google o Apple, o por correo electrónico.",
     "terms.article5.item2":
@@ -579,14 +543,13 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article5.item3":
       "Tras la cancelación, la información personal se procesará de acuerdo con la Política de Privacidad, y los datos sujetos a retención obligatoria por ley se conservarán durante el período requerido antes de su destrucción.",
 
-    "terms.article6.title":
-      "Artículo 6 (Tarifas del Servicio y Pago)",
+    "terms.article6.title": "Artículo 6 (Tarifas del Servicio y Pago)",
     "terms.article6.item1":
-      "Los servicios básicos (captura y almacenamiento de fotos) se proporcionan de forma gratuita.",
+      "El Plan Gratuito incluye 1 propiedad, 30 fotos al mes y 3 análisis IA al mes.",
     "terms.article6.item2":
-      "El análisis comparativo con IA y la generación de informes en PDF son servicios de pago, pagaderos mediante compras dentro de la aplicación (Apple App Store, Google Play Store).",
+      "El Plan Pro cuesta $4.99/mes o $49.99/año y ofrece propiedades ilimitadas, captura de fotos y análisis IA (uso justo dentro de 500 al mes). Las solicitudes de IA que excedan 500 al mes pueden limitarse temporalmente para prevenir abuso.",
     "terms.article6.item3":
-      "Los ciclos de facturación y las tarifas de suscripción pueden consultarse en la pantalla de gestión de suscripciones dentro de la aplicación.",
+      "Las suscripciones de pago se procesan mediante compra dentro de la aplicación (Apple App Store, Google Play Store). Los ciclos y tarifas pueden consultarse en la pantalla de gestión de suscripciones.",
     "terms.article6.item4":
       "Las cancelaciones de pago y los reembolsos están sujetos a las políticas de reembolso de las respectivas tiendas de aplicaciones.",
 
@@ -601,8 +564,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article7.item4":
       "La Empresa no garantiza la exactitud ni la integridad de los resultados del análisis de IA y no será responsable de las decisiones o acciones tomadas por los Usuarios basándose en dichos resultados.",
 
-    "terms.article8.title":
-      "Artículo 8 (Obligaciones del Usuario)",
+    "terms.article8.title": "Artículo 8 (Obligaciones del Usuario)",
     "terms.article8.item1":
       "Los Usuarios no deberán realizar las siguientes actividades:",
     "terms.article8.item1.sub1":
@@ -618,8 +580,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article8.item2":
       "Los Usuarios son responsables de la exactitud de las fotos tomadas y la información contractual registrada.",
 
-    "terms.article9.title":
-      "Artículo 9 (Obligaciones de la Empresa)",
+    "terms.article9.title": "Artículo 9 (Obligaciones de la Empresa)",
     "terms.article9.item1":
       "La Empresa se esforzará por proporcionar un Servicio continuo y estable de conformidad con las leyes aplicables y estos Términos.",
     "terms.article9.item2":
@@ -634,8 +595,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article10.item2":
       "La Empresa podrá modificar el contenido u operación del Servicio y notificará previamente los cambios significativos.",
 
-    "terms.article11.title":
-      "Artículo 11 (Gestión de Contenido)",
+    "terms.article11.title": "Artículo 11 (Gestión de Contenido)",
     "terms.article11.item1":
       "Los derechos de autor de las fotos e información contractual cargadas por los Usuarios pertenecen a los Usuarios.",
     "terms.article11.item2":
@@ -643,15 +603,13 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article11.item3":
       "Los datos relacionados con contratos se conservarán de forma segura durante 5 años después de la terminación del contrato (según el plazo de prescripción de la Ley de Protección del Arrendamiento de Viviendas).",
 
-    "terms.article12.title":
-      "Artículo 12 (Responsabilidad por Daños)",
+    "terms.article12.title": "Artículo 12 (Responsabilidad por Daños)",
     "terms.article12.item1":
       "Si el Usuario sufre daños debido a conducta dolosa o negligencia grave de la Empresa, esta compensará dichos daños de conformidad con las leyes aplicables.",
     "terms.article12.item2":
       "Las disposiciones de exención de responsabilidad del Artículo 7 se aplicarán a los daños derivados de inexactitudes en los resultados del análisis de IA.",
 
-    "terms.article13.title":
-      "Artículo 13 (Resolución de Disputas)",
+    "terms.article13.title": "Artículo 13 (Resolución de Disputas)",
     "terms.article13.item1":
       "En caso de disputa entre la Empresa y un Usuario respecto al uso del Servicio, ambas partes negociarán de buena fe para alcanzar una resolución amistosa.",
     "terms.article13.item2":
@@ -695,8 +653,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
       "Stimmt ein Nutzer den geänderten Bedingungen nicht zu, kann er die Nutzung des Dienstes einstellen und sein Konto kündigen.",
 
     "terms.article4.title": "Artikel 4 (Leistungsbeschreibung)",
-    "terms.article4.desc":
-      "Das Unternehmen erbringt folgende Leistungen:",
+    "terms.article4.desc": "Das Unternehmen erbringt folgende Leistungen:",
     "terms.article4.item1":
       "Raumweise Fotoerfassung und -speicherung beim Einzug",
     "terms.article4.item2":
@@ -705,13 +662,11 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
       "Mängeltyp-Klassifizierung (Verdacht auf Fahrlässigkeit, natürliche Abnutzung, vorbestehende Mängel)",
     "terms.article4.item4":
       "Erstellung von PDF-Mängelbeweisberichten zur rechtlichen Referenz",
-    "terms.article4.item5":
-      "Vertragsverwaltung und Foto-Anleitungsfunktionen",
+    "terms.article4.item5": "Vertragsverwaltung und Foto-Anleitungsfunktionen",
     "terms.article4.item6":
       "Weitere vom Unternehmen zusätzlich entwickelte und bereitgestellte Dienste",
 
-    "terms.article5.title":
-      "Artikel 5 (Registrierung und Kontolöschung)",
+    "terms.article5.title": "Artikel 5 (Registrierung und Kontolöschung)",
     "terms.article5.item1":
       "Nutzer können sich über Kakao-, Google- oder Apple-Social-Login oder per E-Mail registrieren.",
     "terms.article5.item2":
@@ -719,14 +674,13 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article5.item3":
       "Bei Kontolöschung werden personenbezogene Daten gemäß der Datenschutzrichtlinie verarbeitet; Daten, die einer gesetzlichen Aufbewahrungspflicht unterliegen, werden für den vorgeschriebenen Zeitraum aufbewahrt und anschließend vernichtet.",
 
-    "terms.article6.title":
-      "Artikel 6 (Servicegebühren und Zahlung)",
+    "terms.article6.title": "Artikel 6 (Servicegebühren und Zahlung)",
     "terms.article6.item1":
-      "Grundlegende Dienste (Fotoerfassung und -speicherung) werden kostenlos bereitgestellt.",
+      "Der Kostenlos-Plan enthält 1 Immobilie, 30 Fotos pro Monat und 3 KI-Analysen pro Monat.",
     "terms.article6.item2":
-      "KI-Vergleichsanalyse und PDF-Berichtserstellung sind kostenpflichtige Dienste, zahlbar über In-App-Käufe (Apple App Store, Google Play Store).",
+      "Das Pro-Abonnement kostet $4.99/Monat oder $49.99/Jahr und bietet unbegrenzte Immobilien, Fotoaufnahmen und KI-Analysen (faire Nutzung bis zu 500 pro Monat). KI-Anfragen, die 500 pro Monat überschreiten, können zur Missbrauchsprävention vorübergehend gedrosselt werden.",
     "terms.article6.item3":
-      "Abrechnungszyklen und Gebühren für Abonnements können auf dem Abonnementverwaltungsbildschirm in der App eingesehen werden.",
+      "Kostenpflichtige Abonnements werden per In-App-Kauf (Apple App Store, Google Play Store) abgewickelt. Abrechnungszyklen und Gebühren können auf dem Abonnementverwaltungsbildschirm in der App eingesehen werden.",
     "terms.article6.item4":
       "Zahlungsstornierungen und Erstattungen unterliegen den Erstattungsrichtlinien der jeweiligen App Stores.",
 
@@ -757,8 +711,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article8.item2":
       "Nutzer sind für die Richtigkeit der aufgenommenen Fotos und der registrierten Vertragsinformationen verantwortlich.",
 
-    "terms.article9.title":
-      "Artikel 9 (Pflichten des Unternehmens)",
+    "terms.article9.title": "Artikel 9 (Pflichten des Unternehmens)",
     "terms.article9.item1":
       "Das Unternehmen ist bestrebt, einen kontinuierlichen und stabilen Dienst gemäß geltendem Recht und diesen Bedingungen bereitzustellen.",
     "terms.article9.item2":
@@ -766,8 +719,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     "terms.article9.item3":
       "Das Unternehmen bearbeitet von Nutzern im Zusammenhang mit der Dienstnutzung vorgebrachte Meinungen oder Beschwerden über geeignete Verfahren.",
 
-    "terms.article10.title":
-      "Artikel 10 (Dienstunterbrechung und -änderung)",
+    "terms.article10.title": "Artikel 10 (Dienstunterbrechung und -änderung)",
     "terms.article10.item1":
       "Das Unternehmen kann den Dienst ganz oder teilweise vorübergehend unterbrechen, wenn unvermeidbare Umstände wie höhere Gewalt, Systemausfälle oder planmäßige Wartungsarbeiten vorliegen.",
     "terms.article10.item2":
