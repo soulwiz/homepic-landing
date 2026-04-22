@@ -52,7 +52,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
     // 제6조
     "terms.article6.title": "제6조 (서비스 이용료 및 결제)",
     "terms.article6.item1":
-      "무료 플랜은 프로퍼티 1개, 사진 월 30장, AI 분석 월 3회로 제공됩니다.",
+      "무료 플랜은 프로퍼티 1개, 사진 월 30장, AI 분석 월 5회로 제공됩니다.",
     "terms.article6.item2":
       "Pro 플랜은 월 $4.99 또는 연 $49.99이며, 무제한 프로퍼티 및 사진 촬영, AI 분석(공정이용 월 500회 이내)을 제공합니다. 월 500회를 초과하는 AI 요청은 남용 방지를 위해 일시 제한될 수 있습니다.",
     "terms.article6.item3":
@@ -187,7 +187,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
 
     "terms.article6.title": "Article 6 (Service Fees and Payment)",
     "terms.article6.item1":
-      "The Free Plan includes 1 property, 30 photos per month, and 3 AI analyses per month.",
+      "The Free Plan includes 1 property, 30 photos per month, and 5 AI analyses per month.",
     "terms.article6.item2":
       "The Pro Plan costs $4.99/month or $49.99/year and provides unlimited properties, photo capture, and AI analysis (fair use within 500 per month). AI requests exceeding 500 per month may be temporarily throttled to prevent abuse.",
     "terms.article6.item3":
@@ -310,7 +310,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
 
     "terms.article6.title": "第6条（サービス利用料および決済）",
     "terms.article6.item1":
-      "無料プランは物件1件、写真月30枚、AI分析月3回で提供されます。",
+      "無料プランは物件1件、写真月30枚、AI分析月5回で提供されます。",
     "terms.article6.item2":
       "Proプランは月$4.99または年$49.99で、無制限の物件・写真撮影・AI分析（公正利用として月500回以内）をご利用いただけます。月500回を超えるAIリクエストは、不正利用防止のため一時的に制限される場合があります。",
     "terms.article6.item3":
@@ -428,7 +428,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
 
     "terms.article6.title": "第六条（服务费用与支付）",
     "terms.article6.item1":
-      "免费套餐包括1个房产、每月30张照片和每月3次AI分析。",
+      "免费套餐包括1个房产、每月30张照片和每月5次AI分析。",
     "terms.article6.item2":
       "Pro套餐每月$4.99或每年$49.99，提供无限房产、无限照片拍摄和AI分析（公平使用：每月最多500次）。超过每月500次的AI请求可能会临时限制以防止滥用。",
     "terms.article6.item3":
@@ -545,7 +545,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
 
     "terms.article6.title": "Artículo 6 (Tarifas del Servicio y Pago)",
     "terms.article6.item1":
-      "El Plan Gratuito incluye 1 propiedad, 30 fotos al mes y 3 análisis IA al mes.",
+      "El Plan Gratuito incluye 1 propiedad, 30 fotos al mes y 5 análisis IA al mes.",
     "terms.article6.item2":
       "El Plan Pro cuesta $4.99/mes o $49.99/año y ofrece propiedades ilimitadas, captura de fotos y análisis IA (uso justo dentro de 500 al mes). Las solicitudes de IA que excedan 500 al mes pueden limitarse temporalmente para prevenir abuso.",
     "terms.article6.item3":
@@ -676,7 +676,7 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
 
     "terms.article6.title": "Artikel 6 (Servicegebühren und Zahlung)",
     "terms.article6.item1":
-      "Der Kostenlos-Plan enthält 1 Immobilie, 30 Fotos pro Monat und 3 KI-Analysen pro Monat.",
+      "Der Kostenlos-Plan enthält 1 Immobilie, 30 Fotos pro Monat und 5 KI-Analysen pro Monat.",
     "terms.article6.item2":
       "Das Pro-Abonnement kostet $4.99/Monat oder $49.99/Jahr und bietet unbegrenzte Immobilien, Fotoaufnahmen und KI-Analysen (faire Nutzung bis zu 500 pro Monat). KI-Anfragen, die 500 pro Monat überschreiten, können zur Missbrauchsprävention vorübergehend gedrosselt werden.",
     "terms.article6.item3":
