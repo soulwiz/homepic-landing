@@ -12,7 +12,7 @@ export const localeNames: Record<Locale, string> = {
 export const translations: Record<Locale, Record<string, string>> = {
   en: {
     // Header
-    "header.brand": "Homepic",
+    "header.brand": "homepic AI",
     "header.features": "Features",
     "header.pricing": "Pricing",
     "header.faq": "FAQ",
@@ -27,7 +27,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.badge": "Available in 6 Languages",
     "hero.title": "Every moment\nof your home,\ncaptured.",
     "hero.desc":
-      "From move-in to move-out, Homepic records, inspects, and protects your home with AI — so you never lose a deposit or miss a maintenance issue again.",
+      "From move-in to move-out, homepic AI records, inspects, and protects your home with AI — so you never lose a deposit or miss a maintenance issue again.",
     "hero.emailPlaceholder": "Enter your email",
     "hero.cta": "Get Pro 1yr Free",
     "hero.limitedSpots": "Limited to first 500",
@@ -70,7 +70,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "lifecycle.badge": "Home Lifecycle",
     "lifecycle.title": "One app for every stage",
     "lifecycle.desc":
-      "From finding your next place to moving out — Homepic covers it all",
+      "From finding your next place to moving out — homepic AI covers it all",
     "lifecycle.browseTitle": "Browse",
     "lifecycle.browseDesc":
       "Inspect properties before signing. AI defects analysis: mold, cracks, and water damage.",
@@ -88,7 +88,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "worldwide.badge": "Global",
     "worldwide.title": "Available worldwide",
     "worldwide.desc":
-      "Homepic supports 6 languages for renters around the globe",
+      "homepic AI supports 6 languages for renters around the globe",
 
     // Pricing
     "pricing.badge": "Pricing",
@@ -127,7 +127,7 @@ export const translations: Record<Locale, Record<string, string>> = {
       "Our AI compares move-in and move-out photos, classifying wallpaper discoloration, floor indentation, and door wear as natural wear, while new scratches and damage are classified as tenant responsibility.",
 
     // CTA
-    "cta.title": "Be the first to try Homepic",
+    "cta.title": "Be the first to try homepic AI",
     "cta.desc":
       "Sign up for early access. We'll notify you when the app launches.",
     "cta.note": "No spam. Unsubscribe anytime.",
@@ -147,7 +147,7 @@ export const translations: Record<Locale, Record<string, string>> = {
   },
 
   ko: {
-    "header.brand": "홈픽",
+    "header.brand": "홈픽AI",
     "header.features": "주요 기능",
     "header.pricing": "요금 안내",
     "header.faq": "FAQ",
@@ -160,7 +160,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.badge": "6개 언어 지원",
     "hero.title": "내 집의 모든 순간,\n기록하다.",
     "hero.desc":
-      "입주부터 퇴실까지, 홈픽이 AI로 기록하고, 점검하고, 보호합니다. 보증금 분쟁도, 유지보수 이슈도 놓치지 마세요.",
+      "입주부터 퇴실까지, 홈픽AI가 AI로 기록하고, 점검하고, 보호합니다. 보증금 분쟁도, 유지보수 이슈도 놓치지 마세요.",
     "hero.emailPlaceholder": "이메일을 입력하세요",
     "hero.cta": "Pro 1년 무료 받기",
     "hero.limitedSpots": "선착순 500명 한정",
@@ -208,7 +208,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     "lifecycle.badge": "주거 라이프사이클",
     "lifecycle.title": "모든 단계를 하나의 앱으로",
-    "lifecycle.desc": "매물 탐색부터 퇴실까지 — 홈픽이 모두 커버합니다",
+    "lifecycle.desc": "매물 탐색부터 퇴실까지 — 홈픽AI가 모두 커버합니다",
     "lifecycle.browseTitle": "탐색",
     "lifecycle.browseDesc":
       "계약 전 매물을 점검합니다. AI가 곰팡이, 균열, 누수를 감지합니다.",
@@ -224,7 +224,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     "worldwide.badge": "글로벌",
     "worldwide.title": "전 세계에서 사용 가능",
-    "worldwide.desc": "홈픽은 전 세계 임차인을 위해 6개 언어를 지원합니다",
+    "worldwide.desc": "홈픽AI는 전 세계 임차인을 위해 6개 언어를 지원합니다",
 
     "pricing.badge": "요금 안내",
     "pricing.title": "심플하고 투명한 요금제",
@@ -260,7 +260,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "faq.a4":
       "AI가 입주 시와 퇴실 시 사진을 비교하여, 벽지 변색·장판 눌림·도어 마모 등은 자연마모로, 새로운 스크래치·파손 등은 세입자 과실로 판정합니다.",
 
-    "cta.title": "홈픽을 가장 먼저 만나보세요",
+    "cta.title": "홈픽AI를 가장 먼저 만나보세요",
     "cta.desc": "사전 등록하시면 앱 출시 시 가장 먼저 알려드립니다.",
     "cta.note": "스팸 없음. 언제든 구독 해지 가능.",
 
@@ -277,7 +277,7 @@ export const translations: Record<Locale, Record<string, string>> = {
   },
 
   ja: {
-    "header.brand": "Homepic",
+    "header.brand": "homepic AI",
     "header.features": "機能",
     "header.pricing": "料金",
     "header.faq": "FAQ",
@@ -290,7 +290,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.badge": "6言語対応",
     "hero.title": "住まいの全てを、\n記録する。",
     "hero.desc":
-      "入居から退去まで、HomepicがAIで記録・検査・保護します。敷金トラブルもメンテナンス問題も見逃しません。",
+      "入居から退去まで、homepic AIがAIで記録・検査・保護します。敷金トラブルもメンテナンス問題も見逃しません。",
     "hero.emailPlaceholder": "メールアドレスを入力",
     "hero.cta": "Pro 1年無料で入手",
     "hero.limitedSpots": "先着500名限定",
@@ -329,7 +329,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     "lifecycle.badge": "住まいのライフサイクル",
     "lifecycle.title": "全てのステージを一つのアプリで",
-    "lifecycle.desc": "物件探しから退去まで — Homepicが全てカバーします",
+    "lifecycle.desc": "物件探しから退去まで — homepic AIが全てカバーします",
     "lifecycle.browseTitle": "検索",
     "lifecycle.browseDesc":
       "契約前に物件を検査。AIがカビ、ひび割れ、水漏れを検知します。",
@@ -346,7 +346,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "worldwide.badge": "グローバル",
     "worldwide.title": "世界中で利用可能",
     "worldwide.desc":
-      "Homepicは世界中の入居者のために6言語をサポートしています",
+      "homepic AIは世界中の入居者のために6言語をサポートしています",
 
     "pricing.badge": "料金",
     "pricing.title": "シンプルで透明な料金",
@@ -382,7 +382,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "faq.a4":
       "AIが入居時と退去時の写真を比較し、壁紙の変色・床の凹み・ドアの摩耗などは自然劣化として、新しい傷・破損などは入居者の責任として判定します。",
 
-    "cta.title": "Homepicをいち早くお試しください",
+    "cta.title": "homepic AIをいち早くお試しください",
     "cta.desc": "事前登録していただければ、アプリリリース時にお知らせします。",
     "cta.note": "スパムなし。いつでも解除可能。",
 
@@ -399,7 +399,7 @@ export const translations: Record<Locale, Record<string, string>> = {
   },
 
   zh: {
-    "header.brand": "Homepic",
+    "header.brand": "homepic AI",
     "header.features": "功能",
     "header.pricing": "价格",
     "header.faq": "常见问题",
@@ -412,7 +412,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.badge": "支持6种语言",
     "hero.title": "家的每一刻，\n尽在掌握。",
     "hero.desc":
-      "从入住到退租，Homepic用AI记录、检查、保护您的家。再也不会丢失押金或遗漏维修问题。",
+      "从入住到退租，homepic AI用AI记录、检查、保护您的家。再也不会丢失押金或遗漏维修问题。",
     "hero.emailPlaceholder": "输入您的邮箱",
     "hero.cta": "免费获取Pro 1年",
     "hero.limitedSpots": "限前500名",
@@ -451,7 +451,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     "lifecycle.badge": "住房生命周期",
     "lifecycle.title": "一个应用，覆盖每个阶段",
-    "lifecycle.desc": "从找房到退租 — Homepic全面覆盖",
+    "lifecycle.desc": "从找房到退租 — homepic AI全面覆盖",
     "lifecycle.browseTitle": "浏览",
     "lifecycle.browseDesc": "签约前检查房产。AI检测霉菌、裂缝和水损。",
     "lifecycle.moveInTitle": "入住",
@@ -464,7 +464,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     "worldwide.badge": "全球",
     "worldwide.title": "全球可用",
-    "worldwide.desc": "Homepic为全球租户提供6种语言支持",
+    "worldwide.desc": "homepic AI为全球租户提供6种语言支持",
 
     "pricing.badge": "价格",
     "pricing.title": "简单透明的定价",
@@ -500,7 +500,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "faq.a4":
       "AI比较入住和退租照片，将墙纸褪色、地板凹痕、门磨损等归类为自然磨损，将新划痕和损坏归类为租户责任。",
 
-    "cta.title": "率先体验Homepic",
+    "cta.title": "率先体验homepic AI",
     "cta.desc": "注册预约，应用上线时第一时间通知您。",
     "cta.note": "无垃圾邮件。随时退订。",
 
@@ -517,7 +517,7 @@ export const translations: Record<Locale, Record<string, string>> = {
   },
 
   es: {
-    "header.brand": "Homepic",
+    "header.brand": "homepic AI",
     "header.features": "Funciones",
     "header.pricing": "Precios",
     "header.faq": "FAQ",
@@ -530,7 +530,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.badge": "Disponible en 6 idiomas",
     "hero.title": "Cada momento\nde tu hogar,\ncapturado.",
     "hero.desc":
-      "Desde la mudanza hasta la salida, Homepic registra, inspecciona y protege tu hogar con IA — para que nunca pierdas una fianza ni pases por alto un problema de mantenimiento.",
+      "Desde la mudanza hasta la salida, homepic AI registra, inspecciona y protege tu hogar con IA — para que nunca pierdas una fianza ni pases por alto un problema de mantenimiento.",
     "hero.emailPlaceholder": "Ingresa tu email",
     "hero.cta": "Pro 1 año gratis",
     "hero.limitedSpots": "Limitado a los primeros 500",
@@ -571,7 +571,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "lifecycle.badge": "Ciclo de vida del hogar",
     "lifecycle.title": "Una app para cada etapa",
     "lifecycle.desc":
-      "Desde buscar tu próximo lugar hasta mudarte — Homepic lo cubre todo",
+      "Desde buscar tu próximo lugar hasta mudarte — homepic AI lo cubre todo",
     "lifecycle.browseTitle": "Buscar",
     "lifecycle.browseDesc":
       "Inspecciona propiedades antes de firmar. AI detecta moho, grietas y daños por agua.",
@@ -588,7 +588,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "worldwide.badge": "Global",
     "worldwide.title": "Disponible en todo el mundo",
     "worldwide.desc":
-      "Homepic soporta 6 idiomas para inquilinos en todo el mundo",
+      "homepic AI soporta 6 idiomas para inquilinos en todo el mundo",
 
     "pricing.badge": "Precios",
     "pricing.title": "Precios simples y transparentes",
@@ -625,7 +625,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "faq.a4":
       "La IA compara fotos de entrada y salida, clasificando decoloración de papel tapiz, marcas en el piso y desgaste de puertas como desgaste natural, mientras que nuevos rasguños y daños se clasifican como responsabilidad del inquilino.",
 
-    "cta.title": "Sé el primero en probar Homepic",
+    "cta.title": "Sé el primero en probar homepic AI",
     "cta.desc":
       "Regístrate para acceso anticipado. Te notificaremos cuando la app se lance.",
     "cta.note": "Sin spam. Cancela cuando quieras.",
@@ -643,7 +643,7 @@ export const translations: Record<Locale, Record<string, string>> = {
   },
 
   de: {
-    "header.brand": "Homepic",
+    "header.brand": "homepic AI",
     "header.features": "Funktionen",
     "header.pricing": "Preise",
     "header.faq": "FAQ",
@@ -656,7 +656,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.badge": "Verfügbar in 6 Sprachen",
     "hero.title": "Jeden Moment\ndeines Zuhauses,\nfestgehalten.",
     "hero.desc":
-      "Vom Einzug bis zum Auszug — Homepic dokumentiert, prüft und schützt dein Zuhause mit KI. Nie wieder Kaution verlieren oder Wartungsprobleme übersehen.",
+      "Vom Einzug bis zum Auszug — homepic AI dokumentiert, prüft und schützt dein Zuhause mit KI. Nie wieder Kaution verlieren oder Wartungsprobleme übersehen.",
     "hero.emailPlaceholder": "E-Mail eingeben",
     "hero.cta": "Pro 1 Jahr kostenlos",
     "hero.limitedSpots": "Begrenzt auf die ersten 500",
@@ -697,7 +697,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "lifecycle.badge": "Wohn-Lebenszyklus",
     "lifecycle.title": "Eine App für jede Phase",
     "lifecycle.desc":
-      "Von der Wohnungssuche bis zum Auszug — Homepic deckt alles ab",
+      "Von der Wohnungssuche bis zum Auszug — homepic AI deckt alles ab",
     "lifecycle.browseTitle": "Suchen",
     "lifecycle.browseDesc":
       "Immobilien vor Vertragsunterzeichnung prüfen. KI erkennt Schimmel, Risse und Wasserschäden.",
@@ -714,7 +714,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "worldwide.badge": "Global",
     "worldwide.title": "Weltweit verfügbar",
     "worldwide.desc":
-      "Homepic unterstützt 6 Sprachen für Mieter auf der ganzen Welt",
+      "homepic AI unterstützt 6 Sprachen für Mieter auf der ganzen Welt",
 
     "pricing.badge": "Preise",
     "pricing.title": "Einfache, transparente Preise",
@@ -750,7 +750,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "faq.a4":
       "Die KI vergleicht Ein- und Auszugsfotos und klassifiziert Tapetenverfärbungen, Bodeneindrücke und Türabnutzung als normale Abnutzung, während neue Kratzer und Schäden als Mieterverantwortung eingestuft werden.",
 
-    "cta.title": "Sei der Erste, der Homepic ausprobiert",
+    "cta.title": "Sei der Erste, der homepic AI ausprobiert",
     "cta.desc":
       "Melde dich für den frühen Zugang an. Wir benachrichtigen dich beim Start.",
     "cta.note": "Kein Spam. Jederzeit abbestellbar.",

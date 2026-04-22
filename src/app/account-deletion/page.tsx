@@ -5,9 +5,9 @@ import { useLanguage } from "../i18n/LanguageContext";
 const content = {
   ko: {
     title: "계정 삭제 안내",
-    heading: "Homepic 계정 삭제 방법",
+    heading: "homepic AI 계정 삭제 방법",
     steps: [
-      "Homepic 앱을 실행합니다.",
+      "homepic AI 앱을 실행합니다.",
       "하단 메뉴에서 '마이페이지'를 선택합니다.",
       "'회원탈퇴'를 선택합니다.",
       "안내 사항을 확인한 후 '탈퇴하기'를 누릅니다.",
@@ -30,9 +30,9 @@ const content = {
   },
   en: {
     title: "Account Deletion",
-    heading: "How to Delete Your Homepic Account",
+    heading: "How to Delete Your homepic AI Account",
     steps: [
-      "Open the Homepic app.",
+      "Open the homepic AI app.",
       "Select 'My Page' from the bottom menu.",
       "Select 'Delete Account'.",
       "Review the information and tap 'Delete'.",

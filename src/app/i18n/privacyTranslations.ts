@@ -2,7 +2,7 @@ import type { Locale } from "./translations";
 
 export const privacyTranslations: Record<Locale, Record<string, string>> = {
   en: {
-    "privacy.pageTitle": "Privacy Policy - Homepic",
+    "privacy.pageTitle": "Privacy Policy - homepic AI",
     "privacy.title": "Privacy Policy",
     "privacy.effectiveDate": "Effective: March 1, 2026",
     "privacy.intro":
@@ -167,7 +167,7 @@ export const privacyTranslations: Record<Locale, Record<string, string>> = {
   },
 
   ko: {
-    "privacy.pageTitle": "개인정보처리방침 - 홈픽",
+    "privacy.pageTitle": "개인정보처리방침 - 홈픽AI",
     "privacy.title": "개인정보 처리방침",
     "privacy.effectiveDate": "시행일: 2026년 3월 1일",
     "privacy.intro":
@@ -305,7 +305,7 @@ export const privacyTranslations: Record<Locale, Record<string, string>> = {
   },
 
   ja: {
-    "privacy.pageTitle": "プライバシーポリシー - Homepic",
+    "privacy.pageTitle": "プライバシーポリシー - homepic AI",
     "privacy.title": "プライバシーポリシー",
     "privacy.effectiveDate": "施行日: 2026年3月1日",
     "privacy.intro":
@@ -450,7 +450,7 @@ export const privacyTranslations: Record<Locale, Record<string, string>> = {
   },
 
   zh: {
-    "privacy.pageTitle": "隐私政策 - Homepic",
+    "privacy.pageTitle": "隐私政策 - homepic AI",
     "privacy.title": "隐私政策",
     "privacy.effectiveDate": "生效日期：2026年3月1日",
     "privacy.intro":
@@ -577,7 +577,7 @@ export const privacyTranslations: Record<Locale, Record<string, string>> = {
   },
 
   es: {
-    "privacy.pageTitle": "Pol\u00edtica de Privacidad - Homepic",
+    "privacy.pageTitle": "Pol\u00edtica de Privacidad - homepic AI",
     "privacy.title": "Pol\u00edtica de Privacidad",
     "privacy.effectiveDate": "Fecha de vigencia: 1 de marzo de 2026",
     "privacy.intro":
@@ -754,7 +754,7 @@ export const privacyTranslations: Record<Locale, Record<string, string>> = {
   },
 
   de: {
-    "privacy.pageTitle": "Datenschutzrichtlinie - Homepic",
+    "privacy.pageTitle": "Datenschutzrichtlinie - homepic AI",
     "privacy.title": "Datenschutzrichtlinie",
     "privacy.effectiveDate": "G\u00fcltig ab: 1. M\u00e4rz 2026",
     "privacy.intro":

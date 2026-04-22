@@ -9,17 +9,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Homepic - Your Home, Managed with AI",
+  title: "homepic AI - Your Home, Managed with AI",
   description:
-    "From move-in to move-out, Homepic records, inspects, and protects your home with AI. Available in 6 languages.",
+    "From move-in to move-out, homepic AI records, inspects, and protects your home with AI. Available in 6 languages.",
   keywords:
     "home management,rental inspection,security deposit,AI analysis,move-in,move-out,maintenance,property management",
   openGraph: {
-    title: "Homepic - Every moment of your home, captured",
+    title: "homepic AI - Every moment of your home, captured",
     description:
       "AI-powered home management app. Photo capture, comparison analysis, maintenance tracking, and legal-ready reports.",
     url: "https://homepic.app",
-    siteName: "Homepic",
+    siteName: "homepic AI",
     locale: "en_US",
     type: "website",
     images: [
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
         url: "https://homepic.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Homepic App Screenshot",
+        alt: "homepic AI App Screenshot",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Homepic - Every moment of your home, captured",
+    title: "homepic AI - Every moment of your home, captured",
     description: "AI-powered home management app. From move-in to move-out.",
     images: ["https://homepic.app/og-image.png"],
   },

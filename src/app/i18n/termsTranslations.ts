@@ -3,14 +3,14 @@ import type { Locale } from "./translations";
 // 이용약관 페이지 다국어 번역
 export const termsTranslations: Record<Locale, Record<string, string>> = {
   ko: {
-    "terms.pageTitle": "이용약관 - 홈픽",
-    "terms.title": "홈픽 서비스 이용약관",
+    "terms.pageTitle": "이용약관 - 홈픽AI",
+    "terms.title": "홈픽AI 서비스 이용약관",
     "terms.effectiveDate": "시행일: 2026년 3월 1일",
 
     // 제1조
     "terms.article1.title": "제1조 (목적)",
     "terms.article1.content":
-      '이 약관은 주식회사 인터스틱(이하 "회사")이 제공하는 전월세 하자 증거 수집 서비스 "홈픽"(이하 "서비스")의 이용 조건 및 절차, 회사와 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.',
+      '이 약관은 주식회사 인터스틱(이하 "회사")이 제공하는 전월세 하자 증거 수집 서비스 "홈픽AI"(이하 "서비스")의 이용 조건 및 절차, 회사와 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.',
 
     // 제2조
     "terms.article2.title": "제2조 (용어의 정의)",
@@ -139,13 +139,13 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
   },
 
   en: {
-    "terms.pageTitle": "Terms of Service - Homepic",
-    "terms.title": "Homepic Terms of Service",
+    "terms.pageTitle": "Terms of Service - homepic AI",
+    "terms.title": "homepic AI Terms of Service",
     "terms.effectiveDate": "Effective: March 1, 2026",
 
     "terms.article1.title": "Article 1 (Purpose)",
     "terms.article1.content":
-      'These Terms govern the conditions, procedures, and the rights, obligations, and responsibilities of the Company and Users regarding the use of the rental defect evidence collection service "Homepic" (hereinafter "Service") provided by interstick Corp (hereinafter "Company").',
+      'These Terms govern the conditions, procedures, and the rights, obligations, and responsibilities of the Company and Users regarding the use of the rental defect evidence collection service "homepic AI" (hereinafter "Service") provided by interstick Corp (hereinafter "Company").',
 
     "terms.article2.title": "Article 2 (Definitions)",
     "terms.article2.item1":
@@ -267,13 +267,13 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
   },
 
   ja: {
-    "terms.pageTitle": "利用規約 - Homepic",
-    "terms.title": "Homepic サービス利用規約",
+    "terms.pageTitle": "利用規約 - homepic AI",
+    "terms.title": "homepic AI サービス利用規約",
     "terms.effectiveDate": "施行日：2026年3月1日",
 
     "terms.article1.title": "第1条（目的）",
     "terms.article1.content":
-      "本規約は、株式会社interstick（以下「当社」）が提供する賃貸物件の瑕疵証拠収集サービス「Homepic」（以下「本サービス」）の利用条件および手続き、当社と利用者の権利・義務および責任事項を規定することを目的とします。",
+      "本規約は、株式会社interstick（以下「当社」）が提供する賃貸物件の瑕疵証拠収集サービス「homepic AI」（以下「本サービス」）の利用条件および手続き、当社と利用者の権利・義務および責任事項を規定することを目的とします。",
 
     "terms.article2.title": "第2条（用語の定義）",
     "terms.article2.item1":
@@ -388,13 +388,13 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
   },
 
   zh: {
-    "terms.pageTitle": "服务条款 - Homepic",
-    "terms.title": "Homepic 服务使用条款",
+    "terms.pageTitle": "服务条款 - homepic AI",
+    "terms.title": "homepic AI 服务使用条款",
     "terms.effectiveDate": "生效日期：2026年3月1日",
 
     "terms.article1.title": "第一条（目的）",
     "terms.article1.content":
-      "本条款旨在规定interstick株式会社（以下简称\u201C公司\u201D）提供的租房缺陷证据收集服务\u201CHomepic\u201D（以下简称\u201C服务\u201D）的使用条件及程序、公司与用户的权利义务及责任事项。",
+      "本条款旨在规定interstick株式会社（以下简称\u201C公司\u201D）提供的租房缺陷证据收集服务\u201Chomepic AI\u201D（以下简称\u201C服务\u201D）的使用条件及程序、公司与用户的权利义务及责任事项。",
 
     "terms.article2.title": "第二条（术语定义）",
     "terms.article2.item1":
@@ -495,13 +495,13 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
   },
 
   es: {
-    "terms.pageTitle": "Términos de Servicio - Homepic",
-    "terms.title": "Términos de Servicio de Homepic",
+    "terms.pageTitle": "Términos de Servicio - homepic AI",
+    "terms.title": "Términos de Servicio de homepic AI",
     "terms.effectiveDate": "Vigente desde: 1 de marzo de 2026",
 
     "terms.article1.title": "Artículo 1 (Propósito)",
     "terms.article1.content":
-      'Estos Términos regulan las condiciones, procedimientos y los derechos, obligaciones y responsabilidades de la Empresa y los Usuarios en relación con el uso del servicio de recopilación de evidencia de defectos en propiedades de alquiler "Homepic" (en adelante, el "Servicio") proporcionado por interstick Corp (en adelante, la "Empresa").',
+      'Estos Términos regulan las condiciones, procedimientos y los derechos, obligaciones y responsabilidades de la Empresa y los Usuarios en relación con el uso del servicio de recopilación de evidencia de defectos en propiedades de alquiler "homepic AI" (en adelante, el "Servicio") proporcionado por interstick Corp (en adelante, la "Empresa").',
 
     "terms.article2.title": "Artículo 2 (Definiciones)",
     "terms.article2.item1":
@@ -627,13 +627,13 @@ export const termsTranslations: Record<Locale, Record<string, string>> = {
   },
 
   de: {
-    "terms.pageTitle": "Nutzungsbedingungen - Homepic",
-    "terms.title": "Homepic Nutzungsbedingungen",
+    "terms.pageTitle": "Nutzungsbedingungen - homepic AI",
+    "terms.title": "homepic AI Nutzungsbedingungen",
     "terms.effectiveDate": "Gültig ab: 1. März 2026",
 
     "terms.article1.title": "Artikel 1 (Zweck)",
     "terms.article1.content":
-      "Diese Bedingungen regeln die Nutzungsvoraussetzungen und -verfahren sowie die Rechte, Pflichten und Verantwortlichkeiten des Unternehmens und der Nutzer in Bezug auf den von interstick Corp (nachfolgend „Unternehmen“) bereitgestellten Mietmängel-Beweissicherungsdienst „Homepic“ (nachfolgend „Dienst“).",
+      "Diese Bedingungen regeln die Nutzungsvoraussetzungen und -verfahren sowie die Rechte, Pflichten und Verantwortlichkeiten des Unternehmens und der Nutzer in Bezug auf den von interstick Corp (nachfolgend „Unternehmen“) bereitgestellten Mietmängel-Beweissicherungsdienst „homepic AI“ (nachfolgend „Dienst“).",
 
     "terms.article2.title": "Artikel 2 (Begriffsbestimmungen)",
     "terms.article2.item1":

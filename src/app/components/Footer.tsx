@@ -67,7 +67,7 @@ export function Footer() {
       </div>
       <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between">
         <span className="text-xs text-gray-600">
-          &copy; 2026 Homepic. All rights reserved.
+          &copy; 2026 homepic AI. All rights reserved.
         </span>
         <span className="text-xs text-gray-600">support@homepic.app</span>
       </div>
