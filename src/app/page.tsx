@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import { useLanguage } from "./i18n/LanguageContext";
 import { FAQSection } from "./components/FAQSection";
-import { EmailForm } from "./components/EmailForm";
+import { DownloadBadges } from "./components/DownloadBadges";
 
 export default function LandingPage() {
   const { locale, t } = useLanguage();
@@ -29,7 +29,7 @@ export default function LandingPage() {
     <main className="flex flex-col">
       {/* Event Banner */}
       <a
-        href="#early-access"
+        href="#download"
         className="bg-gradient-to-r from-teal to-teal-dark px-6 py-2 md:py-3.5 flex items-center justify-center gap-3 hover:opacity-90 transition"
       >
         <span className="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -55,9 +55,7 @@ export default function LandingPage() {
             <p className="text-sm md:text-lg text-gray-500 leading-relaxed max-w-lg">
               {t("hero.desc")}
             </p>
-            <div className="max-w-[480px]">
-              <EmailForm />
-            </div>
+            <DownloadBadges />
             <p className="text-sm text-gray-400">🚀 {t("hero.note")}</p>
           </div>
 
@@ -432,7 +430,7 @@ export default function LandingPage() {
               ))}
             </div>
             <a
-              href="#early-access"
+              href="#download"
               className="w-full bg-white text-teal rounded-xl py-3.5 text-base font-semibold hover:bg-gray-50 transition text-center"
             >
               {t("pricing.proCta")}
@@ -449,17 +447,17 @@ export default function LandingPage() {
 
       {/* Final CTA */}
       <section
-        id="early-access"
+        id="download"
         className="px-6 md:px-20 py-20 md:py-24 bg-gradient-to-b from-teal to-teal-dark text-center"
       >
         <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
           {t("cta.title")}
         </h2>
         <p className="text-lg text-white/60 mt-4 mb-8">{t("cta.desc")}</p>
-        <div className="max-w-[560px] mx-auto">
-          <EmailForm variant="dark" />
+        <div className="flex justify-center">
+          <DownloadBadges variant="dark" size="large" />
         </div>
-        <p className="text-sm text-white/40 mt-4">🔒 {t("cta.note")}</p>
+        <p className="text-sm text-white/40 mt-6">🔒 {t("cta.note")}</p>
       </section>
     </main>
   );

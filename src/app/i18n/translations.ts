@@ -14,13 +14,14 @@ export const translations: Record<Locale, Record<string, string>> = {
     // Header
     "header.brand": "homepic AI",
     "header.features": "Features",
+    "header.howto": "How to Use",
     "header.pricing": "Pricing",
     "header.faq": "FAQ",
-    "header.earlyAccess": "Get Early Access",
+    "header.download": "Download",
 
     // Event Banner
-    "event.badge": "100% FREE",
-    "event.title": "Start protecting your home — completely free",
+    "event.badge": "AVAILABLE NOW",
+    "event.title": "homepic AI is live — download for free",
     "event.value": "",
 
     // Hero
@@ -28,12 +29,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "hero.title": "Every moment\nof your home,\ncaptured.",
     "hero.desc":
       "From move-in to move-out, homepic AI records, inspects, and protects your home with AI — so you never lose a deposit or miss a maintenance issue again.",
-    "hero.emailPlaceholder": "Enter your email",
-    "hero.cta": "Get Pro 1yr Free",
-    "hero.limitedSpots": "Limited to first 500",
-    "hero.waitlistCount": "{count} people are waiting",
-    "hero.spotsLeft": "{count} spots left out of 500",
-    "hero.note": "Launching soon — be the first to know",
+    "hero.note": "Available now on the App Store and Google Play",
 
     // Phone Mockup
     "phone.greeting": "Hello, Sarah",
@@ -108,7 +104,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "pricing.proF2": "Unlimited AI inspections*",
     "pricing.proF3": "Document vault with OCR",
     "pricing.proF4": "Priority support",
-    "pricing.proCta": "Get Early Access",
+    "pricing.proCta": "Download Now",
     "pricing.fairUse": "* Fair use: up to 500 AI inspections per month",
 
     // FAQ
@@ -127,10 +123,29 @@ export const translations: Record<Locale, Record<string, string>> = {
       "Our AI compares move-in and move-out photos, classifying wallpaper discoloration, floor indentation, and door wear as natural wear, while new scratches and damage are classified as tenant responsibility.",
 
     // CTA
-    "cta.title": "Be the first to try homepic AI",
-    "cta.desc":
-      "Sign up for early access. We'll notify you when the app launches.",
-    "cta.note": "No spam. Unsubscribe anytime.",
+    "cta.title": "Start protecting your home today",
+    "cta.desc": "Download homepic AI on the App Store or Google Play",
+    "cta.note": "Free to download · Available in 6 languages",
+
+    // Guide
+    "guide.title": "How to Use",
+    "guide.subtitle": "Get started in 5 simple steps",
+    "guide.step1Title": "Download & Sign Up",
+    "guide.step1Desc":
+      "Get homepic AI from the App Store or Google Play. Sign in with Kakao, Google, or email.",
+    "guide.step2Title": "Add Your Home",
+    "guide.step2Desc":
+      "Enter your address and let homepic create your home profile automatically.",
+    "guide.step3Title": "Capture Photos",
+    "guide.step3Desc":
+      "Walk through each room and capture photos. The AI guide helps you frame each shot consistently.",
+    "guide.step4Title": "AI Inspection",
+    "guide.step4Desc":
+      "AI automatically detects defects — mold, cracks, scratches, water damage — and creates a report.",
+    "guide.step5Title": "Download Report",
+    "guide.step5Desc":
+      "Get a PDF report with timestamped, GPS-verified evidence — ready for any dispute.",
+    "guide.downloadCta": "Download Now",
 
     // Footer
     "footer.tagline": "Your home, managed with AI",
@@ -138,35 +153,25 @@ export const translations: Record<Locale, Record<string, string>> = {
     "footer.legal": "Legal",
     "footer.terms": "Terms of Service",
     "footer.privacy": "Privacy Policy",
-
-    // Email Form
-    "email.success": "You're on the list! We'll notify you at launch.",
-    "email.error": "Something went wrong. Please try again.",
-    "email.invalidEmail": "Please enter a valid email address.",
-    "email.submitting": "Submitting...",
   },
 
   ko: {
     "header.brand": "홈픽AI",
     "header.features": "주요 기능",
+    "header.howto": "사용방법",
     "header.pricing": "요금 안내",
     "header.faq": "FAQ",
-    "header.earlyAccess": "사전 등록",
+    "header.download": "다운로드",
 
-    "event.badge": "100% 무료",
-    "event.title": "지금 바로 무료로 시작하세요",
+    "event.badge": "출시 완료",
+    "event.title": "홈픽AI가 출시되었습니다 — 무료로 다운로드",
     "event.value": "",
 
     "hero.badge": "6개 언어 지원",
     "hero.title": "내 집의 모든 순간,\n기록하다.",
     "hero.desc":
       "입주부터 퇴실까지, 홈픽AI가 AI로 기록하고, 점검하고, 보호합니다. 보증금 분쟁도, 유지보수 이슈도 놓치지 마세요.",
-    "hero.emailPlaceholder": "이메일을 입력하세요",
-    "hero.cta": "Pro 1년 무료 받기",
-    "hero.limitedSpots": "선착순 500명 한정",
-    "hero.waitlistCount": "현재 {count}명이 대기 중입니다",
-    "hero.spotsLeft": "500명 중 {count}자리 남음",
-    "hero.note": "곧 출시됩니다 — 가장 먼저 알려드릴게요",
+    "hero.note": "App Store와 Google Play에서 다운로드하세요",
 
     "phone.greeting": "안녕하세요, 테스트유저님",
     "phone.title": "스마트 홈 기록 관리",
@@ -243,7 +248,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "pricing.proF2": "무제한 AI 점검*",
     "pricing.proF3": "OCR 문서 보관함",
     "pricing.proF4": "우선 지원",
-    "pricing.proCta": "사전 등록하기",
+    "pricing.proCta": "지금 다운로드",
     "pricing.fairUse": "* 공정이용: AI 점검 월 500회까지",
 
     "faq.title": "자주 묻는 질문",
@@ -260,43 +265,52 @@ export const translations: Record<Locale, Record<string, string>> = {
     "faq.a4":
       "AI가 입주 시와 퇴실 시 사진을 비교하여, 벽지 변색·장판 눌림·도어 마모 등은 자연마모로, 새로운 스크래치·파손 등은 세입자 과실로 판정합니다.",
 
-    "cta.title": "홈픽AI를 가장 먼저 만나보세요",
-    "cta.desc": "사전 등록하시면 앱 출시 시 가장 먼저 알려드립니다.",
-    "cta.note": "스팸 없음. 언제든 구독 해지 가능.",
+    "cta.title": "지금 내 집을 지키세요",
+    "cta.desc": "App Store 또는 Google Play에서 홈픽AI를 다운로드하세요",
+    "cta.note": "무료 다운로드 · 6개 언어 지원",
+
+    "guide.title": "사용방법",
+    "guide.subtitle": "5단계로 시작하세요",
+    "guide.step1Title": "다운로드 & 가입",
+    "guide.step1Desc":
+      "App Store 또는 Google Play에서 홈픽AI를 다운로드하고, 카카오/구글/이메일로 로그인하세요.",
+    "guide.step2Title": "내 집 추가",
+    "guide.step2Desc": "주소를 입력하면 홈픽이 자동으로 내 집을 등록합니다.",
+    "guide.step3Title": "사진 촬영",
+    "guide.step3Desc":
+      "방마다 자유롭게 촬영하세요. AI 가이드가 같은 구도를 안내해드립니다.",
+    "guide.step4Title": "AI 분석",
+    "guide.step4Desc":
+      "AI가 곰팡이, 균열, 스크래치, 누수 등 하자를 자동으로 감지하고 리포트를 생성합니다.",
+    "guide.step5Title": "리포트 다운로드",
+    "guide.step5Desc":
+      "타임스탬프와 GPS가 검증된 PDF 리포트를 받아 분쟁에 대비하세요.",
+    "guide.downloadCta": "지금 다운로드",
 
     "footer.tagline": "AI로 관리하는 내 집",
     "footer.service": "서비스",
     "footer.legal": "법적 고지",
     "footer.terms": "이용약관",
     "footer.privacy": "개인정보처리방침",
-
-    "email.success": "등록 완료! 출시 시 알려드리겠습니다.",
-    "email.error": "문제가 발생했습니다. 다시 시도해주세요.",
-    "email.invalidEmail": "올바른 이메일 주소를 입력해주세요.",
-    "email.submitting": "등록 중...",
   },
 
   ja: {
     "header.brand": "homepic AI",
     "header.features": "機能",
+    "header.howto": "使い方",
     "header.pricing": "料金",
     "header.faq": "FAQ",
-    "header.earlyAccess": "事前登録",
+    "header.download": "ダウンロード",
 
-    "event.badge": "100% 無料",
-    "event.title": "今すぐ無料で始めましょう",
+    "event.badge": "リリース完了",
+    "event.title": "homepic AIがリリースされました — 無料でダウンロード",
     "event.value": "",
 
     "hero.badge": "6言語対応",
     "hero.title": "住まいの全てを、\n記録する。",
     "hero.desc":
       "入居から退去まで、homepic AIがAIで記録・検査・保護します。敷金トラブルもメンテナンス問題も見逃しません。",
-    "hero.emailPlaceholder": "メールアドレスを入力",
-    "hero.cta": "Pro 1年無料で入手",
-    "hero.limitedSpots": "先着500名限定",
-    "hero.waitlistCount": "現在{count}名が待機中です",
-    "hero.spotsLeft": "500名中 残り{count}席",
-    "hero.note": "まもなくリリース — いち早くお届けします",
+    "hero.note": "App StoreとGoogle Playからダウンロード可能",
 
     "phone.greeting": "こんにちは、Sarahさん",
     "phone.title": "住まいを守る",
@@ -365,7 +379,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "pricing.proF2": "無制限AI検査*",
     "pricing.proF3": "OCR書類保管庫",
     "pricing.proF4": "優先サポート",
-    "pricing.proCta": "事前登録する",
+    "pricing.proCta": "今すぐダウンロード",
     "pricing.fairUse": "* 公正利用: AI検査 月500回まで",
 
     "faq.title": "よくある質問",
@@ -377,48 +391,56 @@ export const translations: Record<Locale, Record<string, string>> = {
       "AI分析結果自体は法的効力を保証しません。ただし、サーバー認証タイムスタンプやGPS検証データを含むレポートは、紛争時の有力な参考資料として活用できます。",
     "faq.q3": "レポートの費用はいくらですか？",
     "faq.a3":
-      "レポートの料金はリリース時に公開されます。アプリのダウンロード、写真撮影、物件管理機能は全て無料です。",
+      "レポートは完全無料です。写真撮影、AI検査、物件管理機能は全て無料で利用できます。",
     "faq.q4": "自然劣化と入居者の過失はどう区別しますか？",
     "faq.a4":
       "AIが入居時と退去時の写真を比較し、壁紙の変色・床の凹み・ドアの摩耗などは自然劣化として、新しい傷・破損などは入居者の責任として判定します。",
 
-    "cta.title": "homepic AIをいち早くお試しください",
-    "cta.desc": "事前登録していただければ、アプリリリース時にお知らせします。",
-    "cta.note": "スパムなし。いつでも解除可能。",
+    "cta.title": "今すぐ住まいを守りましょう",
+    "cta.desc": "App StoreまたはGoogle Playからhomepic AIをダウンロード",
+    "cta.note": "無料ダウンロード · 6言語対応",
+
+    "guide.title": "使い方",
+    "guide.subtitle": "5つのステップで始めよう",
+    "guide.step1Title": "ダウンロード & 登録",
+    "guide.step1Desc":
+      "App StoreまたはGoogle Playからhomepic AIをダウンロード。カカオ、Google、メールでログインします。",
+    "guide.step2Title": "住まいを追加",
+    "guide.step2Desc": "住所を入力すると、homepicが自動的に物件を登録します。",
+    "guide.step3Title": "写真撮影",
+    "guide.step3Desc": "各部屋を自由に撮影。AIガイドが同じ構図を案内します。",
+    "guide.step4Title": "AI分析",
+    "guide.step4Desc":
+      "AIがカビ、ひび割れ、傷、水漏れなどを自動検出してレポートを生成します。",
+    "guide.step5Title": "レポートをダウンロード",
+    "guide.step5Desc":
+      "タイムスタンプとGPS検証済みのPDFレポートで紛争に備えましょう。",
+    "guide.downloadCta": "今すぐダウンロード",
 
     "footer.tagline": "AIで管理する住まい",
     "footer.service": "サービス",
     "footer.legal": "法的事項",
     "footer.terms": "利用規約",
     "footer.privacy": "プライバシーポリシー",
-
-    "email.success": "登録完了！リリース時にお知らせします。",
-    "email.error": "エラーが発生しました。もう一度お試しください。",
-    "email.invalidEmail": "有効なメールアドレスを入力してください。",
-    "email.submitting": "送信中...",
   },
 
   zh: {
     "header.brand": "homepic AI",
     "header.features": "功能",
+    "header.howto": "使用方法",
     "header.pricing": "价格",
     "header.faq": "常见问题",
-    "header.earlyAccess": "预约注册",
+    "header.download": "下载",
 
-    "event.badge": "100% 免费",
-    "event.title": "立即免费开始保护您的家",
+    "event.badge": "已上线",
+    "event.title": "homepic AI 现已上线 — 免费下载",
     "event.value": "",
 
     "hero.badge": "支持6种语言",
     "hero.title": "家的每一刻，\n尽在掌握。",
     "hero.desc":
       "从入住到退租，homepic AI用AI记录、检查、保护您的家。再也不会丢失押金或遗漏维修问题。",
-    "hero.emailPlaceholder": "输入您的邮箱",
-    "hero.cta": "免费获取Pro 1年",
-    "hero.limitedSpots": "限前500名",
-    "hero.waitlistCount": "目前{count}人正在等待",
-    "hero.spotsLeft": "500名中剩余{count}个名额",
-    "hero.note": "即将上线 — 第一时间通知您",
+    "hero.note": "现已在 App Store 和 Google Play 上线",
 
     "phone.greeting": "您好，Sarah",
     "phone.title": "守护您的家",
@@ -483,7 +505,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "pricing.proF2": "无限AI检查*",
     "pricing.proF3": "OCR文件保管库",
     "pricing.proF4": "优先支持",
-    "pricing.proCta": "预约注册",
+    "pricing.proCta": "立即下载",
     "pricing.fairUse": "* 公平使用: 每月最多500次AI检查",
 
     "faq.title": "常见问题",
@@ -494,49 +516,54 @@ export const translations: Record<Locale, Record<string, string>> = {
     "faq.a2":
       "AI分析结果本身不具有法律效力。但包含服务器认证时间戳和GPS验证数据的报告可作为纠纷中的有力参考材料。",
     "faq.q3": "报告费用是多少？",
-    "faq.a3":
-      "报告价格将在上线时公布。应用下载、照片拍摄和房产管理功能均免费。",
+    "faq.a3": "报告完全免费。照片拍摄、AI检查和房产管理功能均免费提供。",
     "faq.q4": "如何区分自然磨损和租户损坏？",
     "faq.a4":
       "AI比较入住和退租照片，将墙纸褪色、地板凹痕、门磨损等归类为自然磨损，将新划痕和损坏归类为租户责任。",
 
-    "cta.title": "率先体验homepic AI",
-    "cta.desc": "注册预约，应用上线时第一时间通知您。",
-    "cta.note": "无垃圾邮件。随时退订。",
+    "cta.title": "立即守护您的家",
+    "cta.desc": "在 App Store 或 Google Play 下载 homepic AI",
+    "cta.note": "免费下载 · 支持6种语言",
+
+    "guide.title": "使用方法",
+    "guide.subtitle": "5个简单步骤开始使用",
+    "guide.step1Title": "下载与注册",
+    "guide.step1Desc":
+      "在 App Store 或 Google Play 下载 homepic AI。使用 Kakao、Google 或邮箱登录。",
+    "guide.step2Title": "添加房产",
+    "guide.step2Desc": "输入地址，homepic 会自动创建您的房产档案。",
+    "guide.step3Title": "拍摄照片",
+    "guide.step3Desc": "在每个房间自由拍摄。AI 引导帮助您构图。",
+    "guide.step4Title": "AI 分析",
+    "guide.step4Desc": "AI 自动检测霉菌、裂缝、划痕、漏水等问题并生成报告。",
+    "guide.step5Title": "下载报告",
+    "guide.step5Desc": "获取带时间戳和 GPS 验证的 PDF 报告，随时应对纠纷。",
+    "guide.downloadCta": "立即下载",
 
     "footer.tagline": "AI管理您的家",
     "footer.service": "服务",
     "footer.legal": "法律声明",
     "footer.terms": "服务条款",
     "footer.privacy": "隐私政策",
-
-    "email.success": "注册成功！上线时会通知您。",
-    "email.error": "出了点问题，请重试。",
-    "email.invalidEmail": "请输入有效的邮箱地址。",
-    "email.submitting": "提交中...",
   },
 
   es: {
     "header.brand": "homepic AI",
     "header.features": "Funciones",
+    "header.howto": "Cómo usar",
     "header.pricing": "Precios",
     "header.faq": "FAQ",
-    "header.earlyAccess": "Acceso anticipado",
+    "header.download": "Descargar",
 
-    "event.badge": "100% GRATIS",
-    "event.title": "Empieza a proteger tu hogar — totalmente gratis",
+    "event.badge": "DISPONIBLE",
+    "event.title": "homepic AI ya está disponible — descarga gratis",
     "event.value": "",
 
     "hero.badge": "Disponible en 6 idiomas",
     "hero.title": "Cada momento\nde tu hogar,\ncapturado.",
     "hero.desc":
       "Desde la mudanza hasta la salida, homepic AI registra, inspecciona y protege tu hogar con IA — para que nunca pierdas una fianza ni pases por alto un problema de mantenimiento.",
-    "hero.emailPlaceholder": "Ingresa tu email",
-    "hero.cta": "Pro 1 año gratis",
-    "hero.limitedSpots": "Limitado a los primeros 500",
-    "hero.waitlistCount": "{count} personas están esperando",
-    "hero.spotsLeft": "{count} lugares de 500 disponibles",
-    "hero.note": "Próximamente — sé el primero en enterarte",
+    "hero.note": "Disponible ahora en App Store y Google Play",
 
     "phone.greeting": "Hola, Sarah",
     "phone.title": "Tu hogar, protegido",
@@ -607,7 +634,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "pricing.proF2": "Inspecciones AI ilimitadas*",
     "pricing.proF3": "Bóveda de documentos con OCR",
     "pricing.proF4": "Soporte prioritario",
-    "pricing.proCta": "Acceso anticipado",
+    "pricing.proCta": "Descargar ahora",
     "pricing.fairUse": "* Uso justo: hasta 500 inspecciones AI al mes",
 
     "faq.title": "Preguntas frecuentes",
@@ -619,50 +646,59 @@ export const translations: Record<Locale, Record<string, string>> = {
       "El análisis AI en sí no tiene validez legal. Sin embargo, los reportes con marcas de tiempo autenticadas y datos de verificación GPS pueden servir como material de referencia en disputas.",
     "faq.q3": "¿Cuánto cuesta un reporte?",
     "faq.a3":
-      "Los precios de reportes se anunciarán en el lanzamiento. La descarga de la app, captura de fotos y gestión de propiedades son gratuitas.",
+      "Los reportes son completamente gratis. La captura de fotos, la inspección AI y la gestión de propiedades están incluidas sin costo.",
     "faq.q4":
       "¿Cómo distingue la IA el desgaste natural del daño del inquilino?",
     "faq.a4":
       "La IA compara fotos de entrada y salida, clasificando decoloración de papel tapiz, marcas en el piso y desgaste de puertas como desgaste natural, mientras que nuevos rasguños y daños se clasifican como responsabilidad del inquilino.",
 
-    "cta.title": "Sé el primero en probar homepic AI",
-    "cta.desc":
-      "Regístrate para acceso anticipado. Te notificaremos cuando la app se lance.",
-    "cta.note": "Sin spam. Cancela cuando quieras.",
+    "cta.title": "Protege tu hogar hoy",
+    "cta.desc": "Descarga homepic AI en App Store o Google Play",
+    "cta.note": "Descarga gratis · Disponible en 6 idiomas",
+
+    "guide.title": "Cómo usar",
+    "guide.subtitle": "Empieza en 5 simples pasos",
+    "guide.step1Title": "Descargar y Registrarse",
+    "guide.step1Desc":
+      "Obtén homepic AI en App Store o Google Play. Inicia sesión con Kakao, Google o email.",
+    "guide.step2Title": "Agregar Tu Hogar",
+    "guide.step2Desc":
+      "Ingresa tu dirección y homepic creará tu perfil automáticamente.",
+    "guide.step3Title": "Capturar Fotos",
+    "guide.step3Desc":
+      "Recorre cada habitación y toma fotos. La guía AI te ayuda con el encuadre.",
+    "guide.step4Title": "Inspección AI",
+    "guide.step4Desc":
+      "La IA detecta automáticamente moho, grietas, rayones y daños por agua, y crea un reporte.",
+    "guide.step5Title": "Descargar Reporte",
+    "guide.step5Desc":
+      "Obtén un PDF con marcas de tiempo y GPS verificado — listo para cualquier disputa.",
+    "guide.downloadCta": "Descargar ahora",
 
     "footer.tagline": "Tu hogar, gestionado con IA",
     "footer.service": "Servicio",
     "footer.legal": "Legal",
     "footer.terms": "Términos de servicio",
     "footer.privacy": "Política de privacidad",
-
-    "email.success": "¡Estás en la lista! Te notificaremos en el lanzamiento.",
-    "email.error": "Algo salió mal. Por favor intenta de nuevo.",
-    "email.invalidEmail": "Por favor ingresa una dirección de email válida.",
-    "email.submitting": "Enviando...",
   },
 
   de: {
     "header.brand": "homepic AI",
     "header.features": "Funktionen",
+    "header.howto": "Anleitung",
     "header.pricing": "Preise",
     "header.faq": "FAQ",
-    "header.earlyAccess": "Früher Zugang",
+    "header.download": "Herunterladen",
 
-    "event.badge": "100% KOSTENLOS",
-    "event.title": "Schützen Sie Ihr Zuhause — völlig kostenlos",
+    "event.badge": "JETZT VERFÜGBAR",
+    "event.title": "homepic AI ist da — kostenlos herunterladen",
     "event.value": "",
 
     "hero.badge": "Verfügbar in 6 Sprachen",
     "hero.title": "Jeden Moment\ndeines Zuhauses,\nfestgehalten.",
     "hero.desc":
       "Vom Einzug bis zum Auszug — homepic AI dokumentiert, prüft und schützt dein Zuhause mit KI. Nie wieder Kaution verlieren oder Wartungsprobleme übersehen.",
-    "hero.emailPlaceholder": "E-Mail eingeben",
-    "hero.cta": "Pro 1 Jahr kostenlos",
-    "hero.limitedSpots": "Begrenzt auf die ersten 500",
-    "hero.waitlistCount": "{count} Personen warten bereits",
-    "hero.spotsLeft": "{count} von 500 Plätzen übrig",
-    "hero.note": "Bald verfügbar — sei der Erste, der es erfährt",
+    "hero.note": "Jetzt im App Store und Google Play verfügbar",
 
     "phone.greeting": "Hallo, Sarah",
     "phone.title": "Dein Zuhause, geschützt",
@@ -733,7 +769,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "pricing.proF2": "Unbegrenzte KI-Inspektionen*",
     "pricing.proF3": "Dokumententresor mit OCR",
     "pricing.proF4": "Prioritäts-Support",
-    "pricing.proCta": "Früher Zugang",
+    "pricing.proCta": "Jetzt herunterladen",
     "pricing.fairUse": "* Faire Nutzung: bis zu 500 KI-Inspektionen/Monat",
 
     "faq.title": "Häufig gestellte Fragen",
@@ -745,26 +781,38 @@ export const translations: Record<Locale, Record<string, string>> = {
       "Die KI-Analyse selbst ist nicht rechtlich bindend. Berichte mit serverauthentifizierten Zeitstempeln und GPS-Verifizierungsdaten können jedoch als starkes Referenzmaterial bei Streitigkeiten dienen.",
     "faq.q3": "Was kostet ein Bericht?",
     "faq.a3":
-      "Die Berichtspreise werden bei Marktstart bekannt gegeben. App-Download, Fotoaufnahme und Immobilienverwaltung sind kostenlos.",
+      "Berichte sind komplett kostenlos. Fotoaufnahme, KI-Inspektion und Immobilienverwaltung sind alle kostenfrei enthalten.",
     "faq.q4": "Wie unterscheidet die KI normale Abnutzung von Mieterschäden?",
     "faq.a4":
       "Die KI vergleicht Ein- und Auszugsfotos und klassifiziert Tapetenverfärbungen, Bodeneindrücke und Türabnutzung als normale Abnutzung, während neue Kratzer und Schäden als Mieterverantwortung eingestuft werden.",
 
-    "cta.title": "Sei der Erste, der homepic AI ausprobiert",
-    "cta.desc":
-      "Melde dich für den frühen Zugang an. Wir benachrichtigen dich beim Start.",
-    "cta.note": "Kein Spam. Jederzeit abbestellbar.",
+    "cta.title": "Schütze dein Zuhause noch heute",
+    "cta.desc": "Lade homepic AI im App Store oder Google Play herunter",
+    "cta.note": "Kostenloser Download · Verfügbar in 6 Sprachen",
+
+    "guide.title": "Anleitung",
+    "guide.subtitle": "In 5 einfachen Schritten loslegen",
+    "guide.step1Title": "Download & Registrierung",
+    "guide.step1Desc":
+      "Hol dir homepic AI im App Store oder Google Play. Melde dich mit Kakao, Google oder E-Mail an.",
+    "guide.step2Title": "Zuhause hinzufügen",
+    "guide.step2Desc":
+      "Gib deine Adresse ein, und homepic erstellt automatisch dein Profil.",
+    "guide.step3Title": "Fotos aufnehmen",
+    "guide.step3Desc":
+      "Geh durch jeden Raum und mache Fotos. Die KI-Anleitung hilft dir beim Bildausschnitt.",
+    "guide.step4Title": "KI-Inspektion",
+    "guide.step4Desc":
+      "KI erkennt automatisch Schimmel, Risse, Kratzer und Wasserschäden und erstellt einen Bericht.",
+    "guide.step5Title": "Bericht herunterladen",
+    "guide.step5Desc":
+      "Erhalte einen PDF-Bericht mit Zeitstempel und GPS-Verifizierung — bereit für jeden Streit.",
+    "guide.downloadCta": "Jetzt herunterladen",
 
     "footer.tagline": "Dein Zuhause, mit KI verwaltet",
     "footer.service": "Service",
     "footer.legal": "Rechtliches",
     "footer.terms": "Nutzungsbedingungen",
     "footer.privacy": "Datenschutzrichtlinie",
-
-    "email.success":
-      "Du bist auf der Liste! Wir benachrichtigen dich beim Start.",
-    "email.error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
-    "email.invalidEmail": "Bitte gib eine gültige E-Mail-Adresse ein.",
-    "email.submitting": "Wird gesendet...",
   },
 };

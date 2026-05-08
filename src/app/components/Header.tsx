@@ -97,6 +97,13 @@ export function Header() {
               {t("header.features")}
             </Link>
             <Link
+              href="/guide"
+              onClick={() => setMenuOpen(false)}
+              className="text-[15px] font-medium text-gray-500 hover:text-gray-900 transition py-2"
+            >
+              {t("header.howto")}
+            </Link>
+            <Link
               href="/#pricing"
               onClick={() => setMenuOpen(false)}
               className="text-[15px] font-medium text-gray-500 hover:text-gray-900 transition py-2"
@@ -111,11 +118,11 @@ export function Header() {
               {t("header.faq")}
             </Link>
             <Link
-              href="/#early-access"
+              href="/#download"
               onClick={() => setMenuOpen(false)}
               className="flex items-center justify-center gap-2 bg-teal text-white rounded-[10px] px-6 py-3 text-sm font-semibold hover:bg-teal-dark transition"
             >
-              {t("header.earlyAccess")}
+              {t("header.download")}
             </Link>
           </nav>
         </div>
@@ -128,6 +135,12 @@ export function Header() {
           className="text-[15px] font-medium text-gray-500 hover:text-gray-900 transition"
         >
           {t("header.features")}
+        </Link>
+        <Link
+          href="/guide"
+          className="text-[15px] font-medium text-gray-500 hover:text-gray-900 transition"
+        >
+          {t("header.howto")}
         </Link>
         <Link
           href="/#pricing"
@@ -152,10 +165,10 @@ export function Header() {
           {langOpen && langDropdown}
         </div>
         <Link
-          href="/#early-access"
+          href="/#download"
           className="flex items-center gap-2 bg-teal text-white rounded-[10px] px-6 py-2.5 text-sm font-semibold hover:bg-teal-dark transition"
         >
-          {t("header.earlyAccess")}
+          {t("header.download")}
         </Link>
       </nav>
     </header>
