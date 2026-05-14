@@ -148,6 +148,8 @@ export const translations: Record<Locale, Record<string, string>> = {
     "guide.downloadCta": "Download Now",
 
     // Footer
+    "download.androidComingSoon": "The Android app is coming soon.",
+
     "footer.tagline": "Your home, managed with AI",
     "footer.service": "Service",
     "footer.legal": "Legal",
@@ -287,6 +289,8 @@ export const translations: Record<Locale, Record<string, string>> = {
       "타임스탬프와 GPS가 검증된 PDF 리포트를 받아 분쟁에 대비하세요.",
     "guide.downloadCta": "지금 다운로드",
 
+    "download.androidComingSoon": "안드로이드 앱은 곧 출시됩니다.",
+
     "footer.tagline": "AI로 관리하는 내 집",
     "footer.service": "서비스",
     "footer.legal": "법적 고지",
@@ -417,6 +421,8 @@ export const translations: Record<Locale, Record<string, string>> = {
       "タイムスタンプとGPS検証済みのPDFレポートで紛争に備えましょう。",
     "guide.downloadCta": "今すぐダウンロード",
 
+    "download.androidComingSoon": "Androidアプリは近日公開予定です。",
+
     "footer.tagline": "AIで管理する住まい",
     "footer.service": "サービス",
     "footer.legal": "法的事項",
@@ -539,6 +545,8 @@ export const translations: Record<Locale, Record<string, string>> = {
     "guide.step5Title": "下载报告",
     "guide.step5Desc": "获取带时间戳和 GPS 验证的 PDF 报告，随时应对纠纷。",
     "guide.downloadCta": "立即下载",
+
+    "download.androidComingSoon": "Android 应用即将上线。",
 
     "footer.tagline": "AI管理您的家",
     "footer.service": "服务",
@@ -675,6 +683,9 @@ export const translations: Record<Locale, Record<string, string>> = {
       "Obtén un PDF con marcas de tiempo y GPS verificado — listo para cualquier disputa.",
     "guide.downloadCta": "Descargar ahora",
 
+    "download.androidComingSoon":
+      "La aplicación de Android estará disponible pronto.",
+
     "footer.tagline": "Tu hogar, gestionado con IA",
     "footer.service": "Servicio",
     "footer.legal": "Legal",
@@ -808,6 +819,8 @@ export const translations: Record<Locale, Record<string, string>> = {
     "guide.step5Desc":
       "Erhalte einen PDF-Bericht mit Zeitstempel und GPS-Verifizierung — bereit für jeden Streit.",
     "guide.downloadCta": "Jetzt herunterladen",
+
+    "download.androidComingSoon": "Die Android-App ist bald verfügbar.",
 
     "footer.tagline": "Dein Zuhause, mit KI verwaltet",
     "footer.service": "Service",
