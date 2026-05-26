@@ -1,8 +1,8 @@
 "use client";
 
-import { useLanguage } from "../i18n/LanguageContext";
-
 const APP_STORE_URL = "https://apps.apple.com/app/id6760773667";
+const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=kr.co.hajapp";
 
 interface DownloadBadgesProps {
   variant?: "light" | "dark";
@@ -13,17 +13,11 @@ export function DownloadBadges({
   variant = "light",
   size = "default",
 }: DownloadBadgesProps) {
-  const { t } = useLanguage();
   const isDark = variant === "dark";
   const padding = size === "large" ? "px-6 py-3.5" : "px-5 py-3";
   const badgeBg = isDark
     ? "bg-white text-gray-900 hover:bg-gray-100"
     : "bg-gray-900 text-white hover:bg-black";
-
-  const handleAndroidClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    alert(t("download.androidComingSoon"));
-  };
 
   return (
     <div className="flex flex-wrap items-center gap-3">
@@ -47,11 +41,12 @@ export function DownloadBadges({
         </div>
       </a>
 
-      {/* Google Play — 안드로이드 출시 전까지 곧 출시 alert */}
-      <button
-        type="button"
-        onClick={handleAndroidClick}
-        className={`flex items-center gap-3 rounded-xl ${padding} ${badgeBg} transition shadow-md cursor-pointer`}
+      {/* Google Play */}
+      <a
+        href={PLAY_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`flex items-center gap-3 rounded-xl ${padding} ${badgeBg} transition shadow-md`}
       >
         <svg
           viewBox="0 0 512 512"
@@ -83,7 +78,7 @@ export function DownloadBadges({
           <span className="text-[10px] opacity-80">GET IT ON</span>
           <span className="text-base font-semibold">Google Play</span>
         </div>
-      </button>
+      </a>
     </div>
   );
 }
